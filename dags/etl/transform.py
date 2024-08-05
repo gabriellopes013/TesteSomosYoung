@@ -10,10 +10,4 @@ def transform(**context):
     print("DataFrame:")
     print(df)
     print(df.count())
-    
-    # Atualiza a variável idahoy para o próximo lote
-    current_idahoy = int(Variable.get("idahoy"))
-    new_idahoy = current_idahoy + 10
-    Variable.set("idahoy", new_idahoy)
-    
     return df

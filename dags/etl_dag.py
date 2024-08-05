@@ -6,6 +6,7 @@ from datetime import datetime, timedelta
 from etl.extract import get_data
 from etl.transform import transform
 from etl.testebd import testandobd
+from etl.idhoy import idahoy
 from etl.dim_load import load_dim_user_type, load_dim_company, load_dim_campaign, load_fatoemailmarketing
 
 default_args = {
@@ -129,9 +130,13 @@ with DAG(
                 python_callable=load_fatoemailmarketing,
                 provide_context=True,
             )
-    
+    modify_id = PythonOperator(
+                task_id='modify_idahoy',
+                python_callable=idahoy,
+                provide_context=True,
+            )
  
 (extract_api >>  transform_data >> testandobanco >>
  [create_dim_campaign, create_dim_company, create_dim_user_type] >> create_fato_email_marketing 
- >> [dim_user_type_load, dim_company_load, dim_campaign_load] >> load_fato
+ >> [dim_user_type_load, dim_company_load, dim_campaign_load] >> load_fato >> modify_id
 )

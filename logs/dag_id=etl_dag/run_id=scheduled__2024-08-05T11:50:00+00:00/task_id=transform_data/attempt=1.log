@@ -1,0 +1,63 @@
+[2024-08-05T12:05:28.293+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-05T12:05:28.306+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_dag.transform_data scheduled__2024-08-05T11:50:00+00:00 [queued]>
+[2024-08-05T12:05:28.314+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_dag.transform_data scheduled__2024-08-05T11:50:00+00:00 [queued]>
+[2024-08-05T12:05:28.314+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-08-05T12:05:28.321+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_data> on 2024-08-05 11:50:00+00:00
+[2024-08-05T12:05:28.326+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=86) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-05T12:05:28.327+0000] {standard_task_runner.py:64} INFO - Started process 88 to run task
+[2024-08-05T12:05:28.327+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'transform_data', 'scheduled__2024-08-05T11:50:00+00:00', '--job-id', '1715', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpll4hnry3']
+[2024-08-05T12:05:28.329+0000] {standard_task_runner.py:91} INFO - Job 1715: Subtask transform_data
+[2024-08-05T12:05:28.365+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_dag.transform_data scheduled__2024-08-05T11:50:00+00:00 [running]> on host c056b9e5f44a
+[2024-08-05T12:05:28.404+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Gabriel Almeida' AIRFLOW_CTX_DAG_ID='etl_dag' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2024-08-05T11:50:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-05T11:50:00+00:00'
+[2024-08-05T12:05:28.404+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-05T12:05:28.417+0000] {logging_mixin.py:188} INFO - [{'id': 1811658, 'id_campaign': 2373, 'campaign': 'UNIFENAS PÓS GRADUAÇÃO INSCRITO INCOMPLETO EMAIL 2', 'company': 'Unifenas Pós Graduação', 'user_type': 'Lead', 'to': 'dr.sergiothome@gmail.com', 'mailer': 'FlowHubspotMailer#general', 'subject': 'Veja só que oportunidade incrível preparamos para você!', 'sent_at': '2024-07-07T13:33:42.000-03:00', 'token': '2V17mSFwHYgOaBKtcz3O6NIoEJcEkbGl', 'opened_at': '2024-07-07T13:36:38.000-03:00', 'clicked_at': None}, {'id': 1811659, 'id_campaign': 2373, 'campaign': 'UNIFENAS PÓS GRADUAÇÃO INSCRITO INCOMPLETO EMAIL 2', 'company': 'Unifenas Pós Graduação', 'user_type': 'Lead', 'to': 'anacatolinebat1910@gmail.com', 'mailer': 'FlowHubspotMailer#general', 'subject': 'Veja só que oportunidade incrível preparamos para você!', 'sent_at': '2024-07-07T13:33:44.000-03:00', 'token': 'gkJC6MMKuL8SBlNodjNEu2TOKF7l9035', 'opened_at': None, 'clicked_at': None}, {'id': 1811660, 'id_campaign': 2373, 'campaign': 'UNIFENAS PÓS GRADUAÇÃO INSCRITO INCOMPLETO EMAIL 2', 'company': 'Unifenas Pós Graduação', 'user_type': 'Lead', 'to': 'elainepsilva506@gmail.com', 'mailer': 'FlowHubspotMailer#general', 'subject': 'Veja só que oportunidade incrível preparamos para você!', 'sent_at': '2024-07-07T13:34:01.000-03:00', 'token': '9XiJMovZ8n7SoEnGbGMm608zLVGqoKgD', 'opened_at': None, 'clicked_at': None}, {'id': 1811661, 'id_campaign': 2373, 'campaign': 'UNIFENAS PÓS GRADUAÇÃO INSCRITO INCOMPLETO EMAIL 2', 'company': 'Unifenas Pós Graduação', 'user_type': 'Lead', 'to': 'gabriellycristinacm2007@gmail.com', 'mailer': 'FlowHubspotMailer#general', 'subject': 'Veja só que oportunidade incrível preparamos para você!', 'sent_at': '2024-07-07T13:34:10.000-03:00', 'token': 'KZ8hdghnpvr2cmlcZm4gqF8sfuDDGUDb', 'opened_at': None, 'clicked_at': None}, {'id': 1811662, 'id_campaign': 2375, 'campaign': 'UNIFENAS PÓS GRADUAÇÃO INSCRITO INCOMPLETO EMAIL 3', 'company': 'Unifenas Pós Graduação', 'user_type': 'Lead', 'to': 'brunoalfenas7@gmail.com', 'mailer': 'FlowHubspotMailer#general', 'subject': 'Conheça os benefícios que esperam por você.', 'sent_at': '2024-07-07T14:28:44.000-03:00', 'token': 'PbJ4NLofe4eGOOE7zoRPV3XsRVQDQn9t', 'opened_at': None, 'clicked_at': None}, {'id': 1811663, 'id_campaign': 1161, 'campaign': '23/2 Unifenas Aprovado - EMAIL 6', 'company': 'Unifenas', 'user_type': 'Lead', 'to': 'lucascmoscardini8@gmail.com', 'mailer': 'FlowHubspotMailer#general', 'subject': 'Quer ajuda para se matricular? Nós estamos aqui para você!', 'sent_at': '2024-07-07T15:39:54.000-03:00', 'token': 'huQguKjJHgugRP2j2AJe2YmLRntAVjHk', 'opened_at': '2024-07-07T15:39:57.000-03:00', 'clicked_at': None}, {'id': 1811664, 'id_campaign': 1160, 'campaign': '23/2 Unifenas Aprovado - EMAIL 5', 'company': 'Unifenas', 'user_type': 'Lead', 'to': 'liviasousabrom@gmail.com', 'mailer': 'FlowHubspotMailer#general', 'subject': 'Por que o ensino superior é tão importante para o seu futuro?', 'sent_at': '2024-07-07T16:36:40.000-03:00', 'token': 'jg471hR9h8ZfWszLeKyvjILTbqTC0V7K', 'opened_at': '2024-07-07T16:36:43.000-03:00', 'clicked_at': None}, {'id': 1811665, 'id_campaign': 1160, 'campaign': '23/2 Unifenas Aprovado - EMAIL 5', 'company': 'Unifenas', 'user_type': 'Lead', 'to': 'christianedu540@gmail.com', 'mailer': 'FlowHubspotMailer#general', 'subject': 'Por que o ensino superior é tão importante para o seu futuro?', 'sent_at': '2024-07-07T16:36:47.000-03:00', 'token': '3vNIdXUJzzs0Qyo0GjkSlkxJetJLEqHX', 'opened_at': None, 'clicked_at': None}, {'id': 1811666, 'id_campaign': 1141, 'campaign': '23/2 Unifenas Lead Frio Imediato - EMAIL 2', 'company': 'Unifenas', 'user_type': 'Lead', 'to': 'brunoalfenas7@gmail.com', 'mailer': 'FlowHubspotMailer#general', 'subject': 'Ainda dá tempo de realizar seu sonho na Unifenas!', 'sent_at': '2024-07-07T23:34:59.000-03:00', 'token': 'ba1SYHdyAZAwDi9r2N8RLq63jS125uHW', 'opened_at': '2024-07-07T23:35:03.000-03:00', 'clicked_at': None}, {'id': 1811667, 'id_campaign': 1141, 'campaign': '23/2 Unifenas Lead Frio Imediato - EMAIL 2', 'company': 'Unifenas', 'user_type': 'Lead', 'to': 'felipebonst@gmail.com', 'mailer': 'FlowHubspotMailer#general', 'subject': 'Ainda dá tempo de realizar seu sonho na Unifenas!', 'sent_at': '2024-07-07T23:51:58.000-03:00', 'token': 'YMMSSMpHkUrumvLpqM3xjYv8AaPGfW8k', 'opened_at': '2024-07-07T23:52:02.000-03:00', 'clicked_at': None}]
+[2024-08-05T12:05:28.420+0000] {logging_mixin.py:188} INFO - DataFrame:
+[2024-08-05T12:05:28.438+0000] {logging_mixin.py:188} INFO -         id  id_campaign  ...                      opened_at clicked_at
+0  1811658         2373  ...  2024-07-07T13:36:38.000-03:00       None
+1  1811659         2373  ...                           None       None
+2  1811660         2373  ...                           None       None
+3  1811661         2373  ...                           None       None
+4  1811662         2375  ...                           None       None
+5  1811663         1161  ...  2024-07-07T15:39:57.000-03:00       None
+6  1811664         1160  ...  2024-07-07T16:36:43.000-03:00       None
+7  1811665         1160  ...                           None       None
+8  1811666         1141  ...  2024-07-07T23:35:03.000-03:00       None
+9  1811667         1141  ...  2024-07-07T23:52:02.000-03:00       None
+
+[10 rows x 12 columns]
+[2024-08-05T12:05:28.440+0000] {logging_mixin.py:188} INFO - id             10
+id_campaign    10
+campaign       10
+company        10
+user_type      10
+to             10
+mailer         10
+subject        10
+sent_at        10
+token          10
+opened_at       5
+clicked_at      0
+dtype: int64
+[2024-08-05T12:05:28.440+0000] {python.py:237} INFO - Done. Returned value was:         id  id_campaign  ...                      opened_at clicked_at
+0  1811658         2373  ...  2024-07-07T13:36:38.000-03:00       None
+1  1811659         2373  ...                           None       None
+2  1811660         2373  ...                           None       None
+3  1811661         2373  ...                           None       None
+4  1811662         2375  ...                           None       None
+5  1811663         1161  ...  2024-07-07T15:39:57.000-03:00       None
+6  1811664         1160  ...  2024-07-07T16:36:43.000-03:00       None
+7  1811665         1160  ...                           None       None
+8  1811666         1141  ...  2024-07-07T23:35:03.000-03:00       None
+9  1811667         1141  ...  2024-07-07T23:52:02.000-03:00       None
+
+[10 rows x 12 columns]
+[2024-08-05T12:05:28.447+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-05T12:05:28.505+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=transform_data, run_id=scheduled__2024-08-05T11:50:00+00:00, execution_date=20240805T115000, start_date=20240805T120528, end_date=20240805T120528
+[2024-08-05T12:05:28.550+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-05T12:05:28.558+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1297: AirflowProviderDeprecationWarning: Call to deprecated class PostgresOperator. (Please use `***.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.Also, you can provide `hook_params={'schema': <database>}`.)
+  result = cls.__new__(cls)
+
+[2024-08-05T12:05:28.568+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-05T12:05:28.569+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

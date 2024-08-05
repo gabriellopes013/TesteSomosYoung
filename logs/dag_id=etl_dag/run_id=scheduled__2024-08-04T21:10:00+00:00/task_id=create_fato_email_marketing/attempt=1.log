@@ -1,0 +1,60 @@
+[2024-08-04T21:24:10.803+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-04T21:24:10.887+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_dag.create_fato_email_marketing scheduled__2024-08-04T21:10:00+00:00 [queued]>
+[2024-08-04T21:24:11.044+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_dag.create_fato_email_marketing scheduled__2024-08-04T21:10:00+00:00 [queued]>
+[2024-08-04T21:24:11.049+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-08-04T21:24:11.129+0000] {taskinstance.py:2330} INFO - Executing <Task(PostgresOperator): create_fato_email_marketing> on 2024-08-04 21:10:00+00:00
+[2024-08-04T21:24:11.193+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=3795) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-04T21:24:11.208+0000] {standard_task_runner.py:64} INFO - Started process 3809 to run task
+[2024-08-04T21:24:11.263+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'create_fato_email_marketing', 'scheduled__2024-08-04T21:10:00+00:00', '--job-id', '1034', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpy6_cx02f']
+[2024-08-04T21:24:11.382+0000] {standard_task_runner.py:91} INFO - Job 1034: Subtask create_fato_email_marketing
+[2024-08-04T21:24:11.885+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_dag.create_fato_email_marketing scheduled__2024-08-04T21:10:00+00:00 [running]> on host 83ccd21ce624
+[2024-08-04T21:24:12.244+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Gabriel Almeida' AIRFLOW_CTX_DAG_ID='etl_dag' AIRFLOW_CTX_TASK_ID='create_fato_email_marketing' AIRFLOW_CTX_EXECUTION_DATE='2024-08-04T21:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-04T21:10:00+00:00'
+[2024-08-04T21:24:12.250+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-04T21:24:12.251+0000] {sql.py:282} INFO - Executing: 
+            CREATE TABLE IF NOT EXISTS FatoEmailMarketing (
+                id SERIAL PRIMARY KEY,
+                id_campaign INT,
+                id_company INT,
+                id_user_type INT,
+                "to" VARCHAR(255),
+                mailer VARCHAR(255),
+                subject VARCHAR(255),
+                sent_at TIMESTAMP,
+                opened_at TIMESTAMP,
+                clicked_at TIMESTAMP,
+                token VARCHAR(255),
+                FOREIGN KEY (id_campaign) REFERENCES DimCampaign(id_campaign),
+                FOREIGN KEY (id_company) REFERENCES DimCompany(id_company),
+                FOREIGN KEY (id_user_type) REFERENCES DimUserType(id_user_type)
+            );
+        
+[2024-08-04T21:24:12.302+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-08-04T21:24:12.388+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-08-04T21:24:12.443+0000] {sql.py:495} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS FatoEmailMarketing (
+                id SERIAL PRIMARY KEY,
+                id_campaign INT,
+                id_company INT,
+                id_user_type INT,
+                "to" VARCHAR(255),
+                mailer VARCHAR(255),
+                subject VARCHAR(255),
+                sent_at TIMESTAMP,
+                opened_at TIMESTAMP,
+                clicked_at TIMESTAMP,
+                token VARCHAR(255),
+                FOREIGN KEY (id_campaign) REFERENCES DimCampaign(id_campaign),
+                FOREIGN KEY (id_company) REFERENCES DimCompany(id_company),
+                FOREIGN KEY (id_user_type) REFERENCES DimUserType(id_user_type)
+            );
+        , parameters: None
+[2024-08-04T21:24:12.451+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-04T21:24:12.470+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=create_fato_email_marketing, run_id=scheduled__2024-08-04T21:10:00+00:00, execution_date=20240804T211000, start_date=20240804T212410, end_date=20240804T212412
+[2024-08-04T21:24:12.556+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-04T21:24:12.615+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1297: AirflowProviderDeprecationWarning: Call to deprecated class PostgresOperator. (Please use `***.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.Also, you can provide `hook_params={'schema': <database>}`.)
+  result = cls.__new__(cls)
+
+[2024-08-04T21:24:12.665+0000] {taskinstance.py:3503} INFO - 3 downstream tasks scheduled from follow-on schedule check
+[2024-08-04T21:24:12.669+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

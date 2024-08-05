@@ -1,0 +1,29 @@
+[2024-08-04T21:24:03.018+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-04T21:24:03.034+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_dag.testandobanco scheduled__2024-08-04T21:10:00+00:00 [queued]>
+[2024-08-04T21:24:03.044+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_dag.testandobanco scheduled__2024-08-04T21:10:00+00:00 [queued]>
+[2024-08-04T21:24:03.045+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-08-04T21:24:03.053+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): testandobanco> on 2024-08-04 21:10:00+00:00
+[2024-08-04T21:24:03.061+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=3778) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-04T21:24:03.062+0000] {standard_task_runner.py:64} INFO - Started process 3781 to run task
+[2024-08-04T21:24:03.063+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'testandobanco', 'scheduled__2024-08-04T21:10:00+00:00', '--job-id', '1028', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpyj03mqkb']
+[2024-08-04T21:24:03.064+0000] {standard_task_runner.py:91} INFO - Job 1028: Subtask testandobanco
+[2024-08-04T21:24:03.123+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_dag.testandobanco scheduled__2024-08-04T21:10:00+00:00 [running]> on host 83ccd21ce624
+[2024-08-04T21:24:03.169+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Gabriel Almeida' AIRFLOW_CTX_DAG_ID='etl_dag' AIRFLOW_CTX_TASK_ID='testandobanco' AIRFLOW_CTX_EXECUTION_DATE='2024-08-04T21:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-04T21:10:00+00:00'
+[2024-08-04T21:24:03.170+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-04T21:24:03.176+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-08-04T21:24:03.195+0000] {logging_mixin.py:188} INFO - Conexão bem-sucedida!
+[2024-08-04T21:24:03.229+0000] {logging_mixin.py:188} INFO -                                now
+0 2024-08-04 21:24:03.203073+00:00
+[2024-08-04T21:24:03.231+0000] {logging_mixin.py:188} INFO -                                now
+0 2024-08-04 21:24:03.203073+00:00
+[2024-08-04T21:24:03.232+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-04T21:24:03.232+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-04T21:24:03.240+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=testandobanco, run_id=scheduled__2024-08-04T21:10:00+00:00, execution_date=20240804T211000, start_date=20240804T212403, end_date=20240804T212403
+[2024-08-04T21:24:03.291+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-04T21:24:03.302+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1297: AirflowProviderDeprecationWarning: Call to deprecated class PostgresOperator. (Please use `***.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.Also, you can provide `hook_params={'schema': <database>}`.)
+  result = cls.__new__(cls)
+
+[2024-08-04T21:24:03.313+0000] {taskinstance.py:3503} INFO - 3 downstream tasks scheduled from follow-on schedule check
+[2024-08-04T21:24:03.314+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

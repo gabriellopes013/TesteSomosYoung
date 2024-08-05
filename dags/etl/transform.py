@@ -7,12 +7,13 @@ def transform(**context):
     df = pd.DataFrame(response)
     
     print("DataFrame:")
-    print(df.head())
+    print(df)
+    print(df.count())
+    
     
     # Atualiza a variável idahoy para o próximo lote
     current_idahoy = int(Variable.get("idahoy", default_var=1811657))
-    new_idahoy = current_idahoy + 1000
+    new_idahoy = current_idahoy + 10
     Variable.set("idahoy", new_idahoy)
-    print(new_idahoy)
     
     return df

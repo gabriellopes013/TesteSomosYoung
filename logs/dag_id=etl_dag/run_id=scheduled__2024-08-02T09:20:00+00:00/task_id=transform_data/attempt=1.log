@@ -1,0 +1,46 @@
+[2024-08-02T09:30:20.032+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-02T09:30:20.053+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_dag.transform_data scheduled__2024-08-02T09:20:00+00:00 [queued]>
+[2024-08-02T09:30:20.075+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_dag.transform_data scheduled__2024-08-02T09:20:00+00:00 [queued]>
+[2024-08-02T09:30:20.076+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-08-02T09:30:20.090+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_data> on 2024-08-02 09:20:00+00:00
+[2024-08-02T09:30:20.101+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=79) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-02T09:30:20.102+0000] {standard_task_runner.py:64} INFO - Started process 81 to run task
+[2024-08-02T09:30:20.102+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'transform_data', 'scheduled__2024-08-02T09:20:00+00:00', '--job-id', '148', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpxp59uk1d']
+[2024-08-02T09:30:20.103+0000] {standard_task_runner.py:91} INFO - Job 148: Subtask transform_data
+[2024-08-02T09:30:20.147+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_dag.transform_data scheduled__2024-08-02T09:20:00+00:00 [running]> on host 69633e19c226
+[2024-08-02T09:30:20.228+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Gabriel Almeida' AIRFLOW_CTX_DAG_ID='etl_dag' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2024-08-02T09:20:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-02T09:20:00+00:00'
+[2024-08-02T09:30:20.229+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-02T09:30:20.270+0000] {logging_mixin.py:188} INFO - DataFrame:
+[2024-08-02T09:30:20.310+0000] {logging_mixin.py:188} INFO -         id  id_campaign  ...                      opened_at clicked_at
+0  1817658         2516  ...  2024-07-21T18:31:57.000-03:00       None
+1  1817659         2516  ...  2024-07-22T19:17:23.000-03:00       None
+2  1817660         2516  ...  2024-07-21T18:31:59.000-03:00       None
+3  1817661         2516  ...  2024-07-21T18:32:01.000-03:00       None
+4  1817662         2516  ...                           None       None
+
+[5 rows x 12 columns]
+[2024-08-02T09:30:20.322+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2024-08-02T09:30:20.325+0000] {python.py:237} INFO - Done. Returned value was:           id  ...                     clicked_at
+0    1817658  ...                           None
+1    1817659  ...                           None
+2    1817660  ...                           None
+3    1817661  ...                           None
+4    1817662  ...                           None
+..       ...  ...                            ...
+995  1818653  ...  2024-07-22T17:45:42.000-03:00
+996  1818654  ...  2024-07-22T17:37:42.000-03:00
+997  1818655  ...                           None
+998  1818656  ...  2024-07-22T18:09:12.000-03:00
+999  1818657  ...  2024-07-22T17:51:37.000-03:00
+
+[1000 rows x 12 columns]
+[2024-08-02T09:30:20.334+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-02T09:30:20.510+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=transform_data, run_id=scheduled__2024-08-02T09:20:00+00:00, execution_date=20240802T092000, start_date=20240802T093020, end_date=20240802T093020
+[2024-08-02T09:30:20.536+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-02T09:30:20.554+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1297: AirflowProviderDeprecationWarning: Call to deprecated class PostgresOperator. (Please use `***.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.Also, you can provide `hook_params={'schema': <database>}`.)
+  result = cls.__new__(cls)
+
+[2024-08-02T09:30:20.568+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-02T09:30:20.570+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

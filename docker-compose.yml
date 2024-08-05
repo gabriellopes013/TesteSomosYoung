@@ -18,14 +18,13 @@ x-airflow-common:
     - ${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs
     - ${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config
     - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins
-    - ${AIRFLOW_PROJ_DIR:-.}/etl:/opt/airflow/etl
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     &airflow-common-depends-on
     postgres-airflow:
       condition: service_healthy
-    # postgres-dw:
-    #   condition: service_healthy
+    postgres-data:
+      condition: service_healthy
 
 services:
   postgres-airflow:
@@ -226,4 +225,3 @@ volumes:
   airflow-dags:
   airflow-plugins:
   airflow-config:
-  airflow-etl:

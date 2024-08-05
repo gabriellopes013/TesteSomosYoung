@@ -1,0 +1,81 @@
+[2024-08-04T22:56:08.215+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-04T22:56:08.226+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_dag.carga_fatoemailmarketing manual__2024-08-04T22:51:41.295707+00:00 [queued]>
+[2024-08-04T22:56:08.230+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_dag.carga_fatoemailmarketing manual__2024-08-04T22:51:41.295707+00:00 [queued]>
+[2024-08-04T22:56:08.231+0000] {taskinstance.py:2306} INFO - Starting attempt 5 of 6
+[2024-08-04T22:56:08.242+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): carga_fatoemailmarketing> on 2024-08-04 22:51:41.295707+00:00
+[2024-08-04T22:56:08.247+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=1490) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-04T22:56:08.248+0000] {standard_task_runner.py:64} INFO - Started process 1492 to run task
+[2024-08-04T22:56:08.248+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'carga_fatoemailmarketing', 'manual__2024-08-04T22:51:41.295707+00:00', '--job-id', '1253', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpzi7xfnkr']
+[2024-08-04T22:56:08.249+0000] {standard_task_runner.py:91} INFO - Job 1253: Subtask carga_fatoemailmarketing
+[2024-08-04T22:56:08.278+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_dag.carga_fatoemailmarketing manual__2024-08-04T22:51:41.295707+00:00 [running]> on host 88edf8e2824b
+[2024-08-04T22:56:08.340+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Gabriel Almeida' AIRFLOW_CTX_DAG_ID='etl_dag' AIRFLOW_CTX_TASK_ID='carga_fatoemailmarketing' AIRFLOW_CTX_EXECUTION_DATE='2024-08-04T22:51:41.295707+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-04T22:51:41.295707+00:00'
+[2024-08-04T22:56:08.342+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-04T22:56:08.364+0000] {logging_mixin.py:188} INFO - ##########    id_campaign
+0         1140
+[2024-08-04T22:56:08.365+0000] {logging_mixin.py:188} INFO - ##########    id_company
+0           1
+[2024-08-04T22:56:08.366+0000] {logging_mixin.py:188} INFO - ##########    id_user_type
+0             1
+[2024-08-04T22:56:08.397+0000] {logging_mixin.py:188} INFO -         id  id_campaign  ...                      opened_at clicked_at
+0  1811818         1140  ...  2024-07-08T03:42:54.000-03:00       None
+1  1811819         1140  ...  2024-07-08T03:42:54.000-03:00       None
+2  1811820         1140  ...  2024-07-08T03:42:54.000-03:00       None
+3  1811821         1140  ...  2024-07-08T03:42:59.000-03:00       None
+4  1811822         1140  ...  2024-07-08T03:42:59.000-03:00       None
+5  1811823         1140  ...  2024-07-08T03:43:03.000-03:00       None
+6  1811824         1140  ...  2024-07-08T03:43:02.000-03:00       None
+7  1811825         1140  ...                           None       None
+8  1811826         1140  ...  2024-07-08T03:43:14.000-03:00       None
+9  1811827         1140  ...  2024-07-08T03:43:15.000-03:00       None
+
+[10 rows x 12 columns]
+[2024-08-04T22:56:08.398+0000] {logging_mixin.py:188} INFO - ###### CHEGOU AQUI #######
+[2024-08-04T22:56:08.402+0000] {logging_mixin.py:188} INFO -         id  id_campaign  ... id_company id_user_type
+0  1811818         1140  ...                        
+1  1811819         1140  ...                        
+2  1811820         1140  ...                        
+3  1811821         1140  ...                        
+4  1811822         1140  ...                        
+5  1811823         1140  ...                        
+6  1811824         1140  ...                        
+7  1811825         1140  ...                        
+8  1811826         1140  ...                        
+9  1811827         1140  ...                        
+
+[10 rows x 14 columns]
+[2024-08-04T22:56:08.404+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-04T22:56:08.404+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/etl/dim_load.py", line 94, in load_fatoemailmarketing
+    df_fato = pd.concat([df_fato, dim_user_type[['user_type']]], axis=1)
+                                  ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/frame.py", line 3899, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6115, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6176, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['user_type'], dtype='object')] are in the [columns]"
+[2024-08-04T22:56:08.426+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=etl_dag, task_id=carga_fatoemailmarketing, run_id=manual__2024-08-04T22:51:41.295707+00:00, execution_date=20240804T225141, start_date=20240804T225608, end_date=20240804T225608
+[2024-08-04T22:56:08.433+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 1253 for task carga_fatoemailmarketing ("None of [Index(['user_type'], dtype='object')] are in the [columns]"; 1492)
+[2024-08-04T22:56:08.470+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-08-04T22:56:08.481+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-04T22:56:08.482+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

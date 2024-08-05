@@ -1,0 +1,104 @@
+[2024-08-04T19:13:19.761+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-04T19:13:19.773+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_dag.Carga_Dimensao_user_type manual__2024-08-04T19:11:03.427974+00:00 [queued]>
+[2024-08-04T19:13:19.777+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_dag.Carga_Dimensao_user_type manual__2024-08-04T19:11:03.427974+00:00 [queued]>
+[2024-08-04T19:13:19.777+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-08-04T19:13:19.783+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): Carga_Dimensao_user_type> on 2024-08-04 19:11:03.427974+00:00
+[2024-08-04T19:13:19.791+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=831) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-04T19:13:19.792+0000] {standard_task_runner.py:64} INFO - Started process 833 to run task
+[2024-08-04T19:13:19.792+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'Carga_Dimensao_user_type', 'manual__2024-08-04T19:11:03.427974+00:00', '--job-id', '775', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpjw7bbiac']
+[2024-08-04T19:13:19.793+0000] {standard_task_runner.py:91} INFO - Job 775: Subtask Carga_Dimensao_user_type
+[2024-08-04T19:13:19.856+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_dag.Carga_Dimensao_user_type manual__2024-08-04T19:11:03.427974+00:00 [running]> on host 83ccd21ce624
+[2024-08-04T19:13:19.937+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Gabriel Almeida' AIRFLOW_CTX_DAG_ID='etl_dag' AIRFLOW_CTX_TASK_ID='Carga_Dimensao_user_type' AIRFLOW_CTX_EXECUTION_DATE='2024-08-04T19:11:03.427974+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-04T19:11:03.427974+00:00'
+[2024-08-04T19:13:19.939+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-04T19:13:20.043+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-08-04T19:13:20.086+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-04T19:13:20.087+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.NotNullViolation: null value in column "id_user_type" of relation "dimusertype" violates not-null constraint
+DETAIL:  Failing row contains (null, Lead).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/etl/dim_load.py", line 13, in load_dim_user_type
+    unique_user_types.to_sql('dimusertype', con=conn, schema='public', if_exists='append', index=False, method='multi')
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/generic.py", line 3008, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 788, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 1958, in to_sql
+    total_inserted = sql_engine.insert_records(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 1507, in insert_records
+    raise err
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 1498, in insert_records
+    return table.insert(chunksize=chunksize, method=method)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 1059, in insert
+    num_inserted = exec_insert(conn, keys, chunk_iter)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 967, in _execute_insert_multi
+    result = conn.execute(stmt)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1385, in execute
+    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1577, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (psycopg2.errors.NotNullViolation) null value in column "id_user_type" of relation "dimusertype" violates not-null constraint
+DETAIL:  Failing row contains (null, Lead).
+
+[SQL: INSERT INTO public.dimusertype (user_type) VALUES (%(user_type_m0)s)]
+[parameters: {'user_type_m0': 'Lead'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+[2024-08-04T19:13:20.108+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=etl_dag, task_id=Carga_Dimensao_user_type, run_id=manual__2024-08-04T19:11:03.427974+00:00, execution_date=20240804T191103, start_date=20240804T191319, end_date=20240804T191320
+[2024-08-04T19:13:20.116+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 775 for task Carga_Dimensao_user_type ((psycopg2.errors.NotNullViolation) null value in column "id_user_type" of relation "dimusertype" violates not-null constraint
+DETAIL:  Failing row contains (null, Lead).
+
+[SQL: INSERT INTO public.dimusertype (user_type) VALUES (%(user_type_m0)s)]
+[parameters: {'user_type_m0': 'Lead'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj); 833)
+[2024-08-04T19:13:20.140+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-08-04T19:13:20.154+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-04T19:13:20.154+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

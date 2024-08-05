@@ -1,0 +1,28 @@
+[2024-07-31T01:11:01.466+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-31T01:11:01.476+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_dag.load_data manual__2024-07-31T01:10:55.784713+00:00 [queued]>
+[2024-07-31T01:11:01.481+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_dag.load_data manual__2024-07-31T01:10:55.784713+00:00 [queued]>
+[2024-07-31T01:11:01.482+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-31T01:11:01.491+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_data> on 2024-07-31 01:10:55.784713+00:00
+[2024-07-31T01:11:01.501+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=146) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-31T01:11:01.502+0000] {standard_task_runner.py:64} INFO - Started process 148 to run task
+[2024-07-31T01:11:01.503+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'load_data', 'manual__2024-07-31T01:10:55.784713+00:00', '--job-id', '61', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmp_5jvxyyh']
+[2024-07-31T01:11:01.504+0000] {standard_task_runner.py:91} INFO - Job 61: Subtask load_data
+[2024-07-31T01:11:01.532+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_dag.load_data manual__2024-07-31T01:10:55.784713+00:00 [running]> on host bddebbc05abf
+[2024-07-31T01:11:01.575+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Gabriel Almeida' AIRFLOW_CTX_DAG_ID='etl_dag' AIRFLOW_CTX_TASK_ID='load_data' AIRFLOW_CTX_EXECUTION_DATE='2024-07-31T01:10:55.784713+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-31T01:10:55.784713+00:00'
+[2024-07-31T01:11:01.575+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-31T01:11:01.723+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-07-31T01:11:01.736+0000] {logging_mixin.py:188} INFO - Erro ao carregar dados: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5437 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5437 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-07-31T01:11:01.736+0000] {logging_mixin.py:188} INFO - ####CHEGOU AQUI#####
+[2024-07-31T01:11:01.736+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-31T01:11:01.738+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-31T01:11:01.747+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=load_data, run_id=manual__2024-07-31T01:10:55.784713+00:00, execution_date=20240731T011055, start_date=20240731T011101, end_date=20240731T011101
+[2024-07-31T01:11:01.815+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-31T01:11:01.828+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-31T01:11:01.830+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,65 @@
+[2024-08-04T22:42:23.423+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-04T22:42:23.451+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_dag.carga_fatoemailmarketing scheduled__2024-08-04T22:30:00+00:00 [queued]>
+[2024-08-04T22:42:23.481+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_dag.carga_fatoemailmarketing scheduled__2024-08-04T22:30:00+00:00 [queued]>
+[2024-08-04T22:42:23.482+0000] {taskinstance.py:2306} INFO - Starting attempt 3 of 6
+[2024-08-04T22:42:23.500+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): carga_fatoemailmarketing> on 2024-08-04 22:30:00+00:00
+[2024-08-04T22:42:23.510+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'carga_fatoemailmarketing', 'scheduled__2024-08-04T22:30:00+00:00', '--job-id', '1210', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpmy20brea']
+[2024-08-04T22:42:23.509+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=1010) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-04T22:42:23.514+0000] {standard_task_runner.py:64} INFO - Started process 1018 to run task
+[2024-08-04T22:42:23.513+0000] {standard_task_runner.py:91} INFO - Job 1210: Subtask carga_fatoemailmarketing
+[2024-08-04T22:42:23.581+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_dag.carga_fatoemailmarketing scheduled__2024-08-04T22:30:00+00:00 [running]> on host 88edf8e2824b
+[2024-08-04T22:42:23.675+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Gabriel Almeida' AIRFLOW_CTX_DAG_ID='etl_dag' AIRFLOW_CTX_TASK_ID='carga_fatoemailmarketing' AIRFLOW_CTX_EXECUTION_DATE='2024-08-04T22:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-04T22:30:00+00:00'
+[2024-08-04T22:42:23.676+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-04T22:42:23.709+0000] {logging_mixin.py:188} INFO - ##########    id_campaign
+0         1140
+[2024-08-04T22:42:23.711+0000] {logging_mixin.py:188} INFO - ##########    id_company
+0           1
+[2024-08-04T22:42:23.712+0000] {logging_mixin.py:188} INFO - ##########    id_user_type
+0             1
+[2024-08-04T22:42:23.768+0000] {logging_mixin.py:188} INFO - ###### CHEGOU AQUI #######
+[2024-08-04T22:42:23.773+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-04T22:42:23.777+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3791, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 152, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 181, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'id_company'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/etl/dim_load.py", line 91, in load_fatoemailmarketing
+    df['id_company'].isin(dim_company['id_company']) &
+    ~~^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/frame.py", line 3893, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3798, in get_loc
+    raise KeyError(key) from err
+KeyError: 'id_company'
+[2024-08-04T22:42:23.839+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=etl_dag, task_id=carga_fatoemailmarketing, run_id=scheduled__2024-08-04T22:30:00+00:00, execution_date=20240804T223000, start_date=20240804T224223, end_date=20240804T224223
+[2024-08-04T22:42:23.851+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 1210 for task carga_fatoemailmarketing ('id_company'; 1018)
+[2024-08-04T22:42:23.869+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-08-04T22:42:23.903+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-04T22:42:23.904+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,68 @@
+[2024-08-04T23:00:16.162+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-04T23:00:16.171+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_dag.carga_fatoemailmarketing scheduled__2024-08-04T22:50:00+00:00 [queued]>
+[2024-08-04T23:00:16.175+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_dag.carga_fatoemailmarketing scheduled__2024-08-04T22:50:00+00:00 [queued]>
+[2024-08-04T23:00:16.175+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-08-04T23:00:16.181+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): carga_fatoemailmarketing> on 2024-08-04 22:50:00+00:00
+[2024-08-04T23:00:16.188+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=1690) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-04T23:00:16.189+0000] {standard_task_runner.py:64} INFO - Started process 1692 to run task
+[2024-08-04T23:00:16.189+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'carga_fatoemailmarketing', 'scheduled__2024-08-04T22:50:00+00:00', '--job-id', '1277', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmp84xwuose']
+[2024-08-04T23:00:16.190+0000] {standard_task_runner.py:91} INFO - Job 1277: Subtask carga_fatoemailmarketing
+[2024-08-04T23:00:16.222+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_dag.carga_fatoemailmarketing scheduled__2024-08-04T22:50:00+00:00 [running]> on host 88edf8e2824b
+[2024-08-04T23:00:16.282+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Gabriel Almeida' AIRFLOW_CTX_DAG_ID='etl_dag' AIRFLOW_CTX_TASK_ID='carga_fatoemailmarketing' AIRFLOW_CTX_EXECUTION_DATE='2024-08-04T22:50:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-04T22:50:00+00:00'
+[2024-08-04T23:00:16.283+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-04T23:00:16.306+0000] {logging_mixin.py:188} INFO - ##########    id_campaign
+0         1140
+[2024-08-04T23:00:16.306+0000] {logging_mixin.py:188} INFO - ##########    id_company
+0           1
+[2024-08-04T23:00:16.307+0000] {logging_mixin.py:188} INFO - ##########    id_user_type
+0             1
+[2024-08-04T23:00:16.350+0000] {logging_mixin.py:188} INFO -         id  id_campaign  ...                      opened_at clicked_at
+0  1811838         1140  ...  2024-07-08T03:43:50.000-03:00       None
+1  1811839         1140  ...  2024-07-08T03:43:50.000-03:00       None
+2  1811840         1140  ...  2024-07-08T03:43:59.000-03:00       None
+3  1811841         1140  ...  2024-07-08T03:44:13.000-03:00       None
+4  1811842         1140  ...  2024-07-08T03:44:22.000-03:00       None
+5  1811843         1140  ...  2024-07-08T03:44:31.000-03:00       None
+6  1811844         1140  ...  2024-07-08T03:44:37.000-03:00       None
+7  1811845         1140  ...  2024-07-08T03:44:45.000-03:00       None
+8  1811846         1140  ...                           None       None
+9  1811847         1140  ...  2024-07-08T03:45:08.000-03:00       None
+
+[10 rows x 12 columns]
+[2024-08-04T23:00:16.351+0000] {logging_mixin.py:188} INFO - ###### CHEGOU AQUI #######
+[2024-08-04T23:00:16.359+0000] {logging_mixin.py:188} INFO -         id  id_campaign  ... id_company id_user_type
+0  1811838         1140  ...                        
+1  1811839         1140  ...                        
+2  1811840         1140  ...                        
+3  1811841         1140  ...                        
+4  1811842         1140  ...                        
+5  1811843         1140  ...                        
+6  1811844         1140  ...                        
+7  1811845         1140  ...                        
+8  1811846         1140  ...                        
+9  1811847         1140  ...                        
+
+[10 rows x 14 columns]
+[2024-08-04T23:00:16.369+0000] {logging_mixin.py:188} INFO - ##########         id  id_campaign  ... id_company id_user_type
+0  1811838         1140  ...        1.0          1.0
+1  1811839         1140  ...        NaN          NaN
+2  1811840         1140  ...        NaN          NaN
+3  1811841         1140  ...        NaN          NaN
+4  1811842         1140  ...        NaN          NaN
+5  1811843         1140  ...        NaN          NaN
+6  1811844         1140  ...        NaN          NaN
+7  1811845         1140  ...        NaN          NaN
+8  1811846         1140  ...        NaN          NaN
+9  1811847         1140  ...        NaN          NaN
+
+[10 rows x 17 columns]
+[2024-08-04T23:00:16.377+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-08-04T23:00:16.401+0000] {logging_mixin.py:188} INFO - Dados inseridos na tabela FatoEmailMarketing com sucesso.
+[2024-08-04T23:00:16.402+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-04T23:00:16.402+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-04T23:00:16.408+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=carga_fatoemailmarketing, run_id=scheduled__2024-08-04T22:50:00+00:00, execution_date=20240804T225000, start_date=20240804T230016, end_date=20240804T230016
+[2024-08-04T23:00:16.461+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-04T23:00:16.477+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-04T23:00:16.479+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

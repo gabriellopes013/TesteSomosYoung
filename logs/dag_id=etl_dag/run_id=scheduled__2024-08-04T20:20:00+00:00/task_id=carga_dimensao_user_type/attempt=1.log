@@ -1,0 +1,22 @@
+[2024-08-04T20:31:57.965+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-04T20:31:57.977+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_dag.carga_dimensao_user_type scheduled__2024-08-04T20:20:00+00:00 [queued]>
+[2024-08-04T20:31:57.982+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_dag.carga_dimensao_user_type scheduled__2024-08-04T20:20:00+00:00 [queued]>
+[2024-08-04T20:31:57.985+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-08-04T20:31:57.999+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): carga_dimensao_user_type> on 2024-08-04 20:20:00+00:00
+[2024-08-04T20:31:58.015+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=2710) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-04T20:31:58.021+0000] {standard_task_runner.py:64} INFO - Started process 2715 to run task
+[2024-08-04T20:31:58.024+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'carga_dimensao_user_type', 'scheduled__2024-08-04T20:20:00+00:00', '--job-id', '961', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpupz3qzio']
+[2024-08-04T20:31:58.027+0000] {standard_task_runner.py:91} INFO - Job 961: Subtask carga_dimensao_user_type
+[2024-08-04T20:31:58.079+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_dag.carga_dimensao_user_type scheduled__2024-08-04T20:20:00+00:00 [running]> on host 83ccd21ce624
+[2024-08-04T20:31:58.189+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Gabriel Almeida' AIRFLOW_CTX_DAG_ID='etl_dag' AIRFLOW_CTX_TASK_ID='carga_dimensao_user_type' AIRFLOW_CTX_EXECUTION_DATE='2024-08-04T20:20:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-04T20:20:00+00:00'
+[2024-08-04T20:31:58.192+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-04T20:31:58.345+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-08-04T20:31:58.407+0000] {logging_mixin.py:188} INFO - Dados inseridos na tabela DimUserType com sucesso.
+[2024-08-04T20:31:58.409+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-04T20:31:58.411+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-04T20:31:58.443+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=carga_dimensao_user_type, run_id=scheduled__2024-08-04T20:20:00+00:00, execution_date=20240804T202000, start_date=20240804T203157, end_date=20240804T203158
+[2024-08-04T20:31:58.496+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-04T20:31:58.516+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-04T20:31:58.517+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,32 @@
+[2024-08-02T13:00:55.564+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-02T13:00:55.614+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_dag.create_dim_company scheduled__2024-08-02T12:50:00+00:00 [queued]>
+[2024-08-02T13:00:56.834+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_dag.create_dim_company scheduled__2024-08-02T12:50:00+00:00 [queued]>
+[2024-08-02T13:00:56.958+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-08-02T13:00:57.158+0000] {taskinstance.py:2330} INFO - Executing <Task(PostgresOperator): create_dim_company> on 2024-08-02 12:50:00+00:00
+[2024-08-02T13:00:57.206+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=2101) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-02T13:00:57.227+0000] {standard_task_runner.py:64} INFO - Started process 2114 to run task
+[2024-08-02T13:00:57.226+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'create_dim_company', 'scheduled__2024-08-02T12:50:00+00:00', '--job-id', '399', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpw2mdqvum']
+[2024-08-02T13:00:57.241+0000] {standard_task_runner.py:91} INFO - Job 399: Subtask create_dim_company
+[2024-08-02T13:00:57.500+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_dag.create_dim_company scheduled__2024-08-02T12:50:00+00:00 [running]> on host 69633e19c226
+[2024-08-02T14:05:23.155+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Gabriel Almeida' AIRFLOW_CTX_DAG_ID='etl_dag' AIRFLOW_CTX_TASK_ID='create_dim_company' AIRFLOW_CTX_EXECUTION_DATE='2024-08-02T12:50:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-02T12:50:00+00:00'
+[2024-08-02T14:05:23.167+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-02T14:05:23.181+0000] {sql.py:282} INFO - Executing: 
+            CREATE TABLE IF NOT EXISTS DimCompany (
+                id_company INT PRIMARY KEY,
+                company VARCHAR(255)
+            );
+        
+[2024-08-02T14:05:23.236+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-08-02T14:05:23.290+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-08-02T14:05:23.368+0000] {sql.py:495} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS DimCompany (
+                id_company INT PRIMARY KEY,
+                company VARCHAR(255)
+            );
+        , parameters: None
+[2024-08-02T14:05:23.392+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-02T14:05:23.503+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=create_dim_company, run_id=scheduled__2024-08-02T12:50:00+00:00, execution_date=20240802T125000, start_date=20240802T130055, end_date=20240802T140523
+[2024-08-02T14:05:23.842+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-02T14:05:24.062+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

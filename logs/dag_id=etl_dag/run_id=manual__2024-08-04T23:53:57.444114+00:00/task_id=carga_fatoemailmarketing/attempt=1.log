@@ -1,0 +1,121 @@
+[2024-08-04T23:54:22.711+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-04T23:54:22.721+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_dag.carga_fatoemailmarketing manual__2024-08-04T23:53:57.444114+00:00 [queued]>
+[2024-08-04T23:54:22.724+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_dag.carga_fatoemailmarketing manual__2024-08-04T23:53:57.444114+00:00 [queued]>
+[2024-08-04T23:54:22.725+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-08-04T23:54:22.730+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): carga_fatoemailmarketing> on 2024-08-04 23:53:57.444114+00:00
+[2024-08-04T23:54:22.736+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=3346) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-04T23:54:22.737+0000] {standard_task_runner.py:64} INFO - Started process 3348 to run task
+[2024-08-04T23:54:22.737+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'carga_fatoemailmarketing', 'manual__2024-08-04T23:53:57.444114+00:00', '--job-id', '1430', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpuznq65wd']
+[2024-08-04T23:54:22.738+0000] {standard_task_runner.py:91} INFO - Job 1430: Subtask carga_fatoemailmarketing
+[2024-08-04T23:54:22.779+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_dag.carga_fatoemailmarketing manual__2024-08-04T23:53:57.444114+00:00 [running]> on host 88edf8e2824b
+[2024-08-04T23:54:22.836+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Gabriel Almeida' AIRFLOW_CTX_DAG_ID='etl_dag' AIRFLOW_CTX_TASK_ID='carga_fatoemailmarketing' AIRFLOW_CTX_EXECUTION_DATE='2024-08-04T23:53:57.444114+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-04T23:53:57.444114+00:00'
+[2024-08-04T23:54:22.837+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-04T23:54:22.875+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-08-04T23:54:22.904+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES ('1162', '1', '1', 'anepetrene28@gmail.com', 'FlowHubspotMailer#general', 'Weverton, queremos ouvir suas expectativas para seu futuro acadêmico.', '2024-07-08T13:13:13.000-03:00', '2024-07-08T13:13:16.000-03:00', 'None', 'FUW5csVbMremAU2voNmR2vU1lXkzS6S5')
+        
+[2024-08-04T23:54:22.905+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+         (1162, 1, 1, 'anepetrene28@gmail.com', 'FlowHubspotMailer#general', 'Weverton, queremos ouvir suas expectativas para seu futuro acadêmico.', '2024-07-08T13:13:13.000-03:00', '2024-07-08T13:13:16.000-03:00', None, 'FUW5csVbMremAU2voNmR2vU1lXkzS6S5')
+[2024-08-04T23:54:22.906+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES ('1162', '1', '1', 'mateus.poppi@outlook.com', 'FlowHubspotMailer#general', 'Mateus, queremos ouvir suas expectativas para seu futuro acadêmico.', '2024-07-08T13:13:16.000-03:00', 'None', 'None', 'Ae0OGNiiSIFYKrmnVUedMsYMk7AlBWBh')
+        
+[2024-08-04T23:54:22.906+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+         (1162, 1, 1, 'mateus.poppi@outlook.com', 'FlowHubspotMailer#general', 'Mateus, queremos ouvir suas expectativas para seu futuro acadêmico.', '2024-07-08T13:13:16.000-03:00', None, None, 'Ae0OGNiiSIFYKrmnVUedMsYMk7AlBWBh')
+[2024-08-04T23:54:22.908+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES ('1162', '1', '1', 'isaujoverissimo2004@gmail.com', 'FlowHubspotMailer#general', 'Isadora, queremos ouvir suas expectativas para seu futuro acadêmico.', '2024-07-08T13:13:41.000-03:00', '2024-07-08T13:13:46.000-03:00', 'None', 'md4aUNFUoS4x9GlZf4RFZ65J3Ade0ha1')
+        
+[2024-08-04T23:54:22.908+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+         (1162, 1, 1, 'isaujoverissimo2004@gmail.com', 'FlowHubspotMailer#general', 'Isadora, queremos ouvir suas expectativas para seu futuro acadêmico.', '2024-07-08T13:13:41.000-03:00', '2024-07-08T13:13:46.000-03:00', None, 'md4aUNFUoS4x9GlZf4RFZ65J3Ade0ha1')
+[2024-08-04T23:54:22.909+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES ('1161', '1', '1', 'mariaclaragxp2019@gmail.com', 'FlowHubspotMailer#general', 'Quer ajuda para se matricular? Nós estamos aqui para você!', '2024-07-08T13:14:19.000-03:00', '2024-07-08T13:14:23.000-03:00', 'None', 'LBtzGhDBCDYxm1xWkSLLxZjliojHpFcG')
+        
+[2024-08-04T23:54:22.909+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+         (1161, 1, 1, 'mariaclaragxp2019@gmail.com', 'FlowHubspotMailer#general', 'Quer ajuda para se matricular? Nós estamos aqui para você!', '2024-07-08T13:14:19.000-03:00', '2024-07-08T13:14:23.000-03:00', None, 'LBtzGhDBCDYxm1xWkSLLxZjliojHpFcG')
+[2024-08-04T23:54:22.910+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES ('1161', '1', '1', 'luanaalmeidaa09@gmail.com', 'FlowHubspotMailer#general', 'Quer ajuda para se matricular? Nós estamos aqui para você!', '2024-07-08T13:14:33.000-03:00', '2024-07-08T13:14:36.000-03:00', 'None', 'JpRFyca6As0LTP9kL7NA568CgZBqN6Ww')
+        
+[2024-08-04T23:54:22.910+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+         (1161, 1, 1, 'luanaalmeidaa09@gmail.com', 'FlowHubspotMailer#general', 'Quer ajuda para se matricular? Nós estamos aqui para você!', '2024-07-08T13:14:33.000-03:00', '2024-07-08T13:14:36.000-03:00', None, 'JpRFyca6As0LTP9kL7NA568CgZBqN6Ww')
+[2024-08-04T23:54:22.911+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES ('1161', '1', '1', 'jivana081@gmail.com', 'FlowHubspotMailer#general', 'Quer ajuda para se matricular? Nós estamos aqui para você!', '2024-07-08T13:14:41.000-03:00', '2024-07-08T13:14:44.000-03:00', 'None', 'UZI9ZfdSZJetm9dMb1kfrtH7sbBh7F3H')
+        
+[2024-08-04T23:54:22.911+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+         (1161, 1, 1, 'jivana081@gmail.com', 'FlowHubspotMailer#general', 'Quer ajuda para se matricular? Nós estamos aqui para você!', '2024-07-08T13:14:41.000-03:00', '2024-07-08T13:14:44.000-03:00', None, 'UZI9ZfdSZJetm9dMb1kfrtH7sbBh7F3H')
+[2024-08-04T23:54:22.912+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES ('1161', '1', '1', 'cviniciusfm237@gmail.com', 'FlowHubspotMailer#general', 'Quer ajuda para se matricular? Nós estamos aqui para você!', '2024-07-08T13:15:43.000-03:00', '2024-07-08T13:15:46.000-03:00', 'None', 'QGl7zMm83icw1tAaOU7OP9qwQXGcXwsZ')
+        
+[2024-08-04T23:54:22.912+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+         (1161, 1, 1, 'cviniciusfm237@gmail.com', 'FlowHubspotMailer#general', 'Quer ajuda para se matricular? Nós estamos aqui para você!', '2024-07-08T13:15:43.000-03:00', '2024-07-08T13:15:46.000-03:00', None, 'QGl7zMm83icw1tAaOU7OP9qwQXGcXwsZ')
+[2024-08-04T23:54:22.913+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES ('1160', '1', '1', 'ddixini@gmail.com', 'FlowHubspotMailer#general', 'Por que o ensino superior é tão importante para o seu futuro?', '2024-07-08T13:16:26.000-03:00', '2024-07-08T13:16:30.000-03:00', 'None', 'UAecGKLZkCYMT20mW9qDqDUffPs7qCiG')
+        
+[2024-08-04T23:54:22.913+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+         (1160, 1, 1, 'ddixini@gmail.com', 'FlowHubspotMailer#general', 'Por que o ensino superior é tão importante para o seu futuro?', '2024-07-08T13:16:26.000-03:00', '2024-07-08T13:16:30.000-03:00', None, 'UAecGKLZkCYMT20mW9qDqDUffPs7qCiG')
+[2024-08-04T23:54:22.914+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES ('1158', '1', '1', 'brunoalfenas7@gmail.com', 'FlowHubspotMailer#general', 'Já parou para pensar que vamos estudar juntos?', '2024-07-08T15:00:58.000-03:00', '2024-07-08T15:01:05.000-03:00', 'None', '3gsU55ZrOwmHh6DAXPxVLMdrbBBc7u6J')
+        
+[2024-08-04T23:54:22.915+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+         (1158, 1, 1, 'brunoalfenas7@gmail.com', 'FlowHubspotMailer#general', 'Já parou para pensar que vamos estudar juntos?', '2024-07-08T15:00:58.000-03:00', '2024-07-08T15:01:05.000-03:00', None, '3gsU55ZrOwmHh6DAXPxVLMdrbBBc7u6J')
+[2024-08-04T23:54:22.916+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES ('1153', '1', '1', 'brunoalfenas7@gmail.com', 'FlowHubspotMailer#general', 'Ainda dá tempo, BRUNO!', '2024-07-08T15:02:09.000-03:00', '2024-07-08T15:02:11.000-03:00', 'None', 'Gx9quOUzaWx1fkiCZhqdyOS8f32YqYM7')
+        
+[2024-08-04T23:54:22.916+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+         (1153, 1, 1, 'brunoalfenas7@gmail.com', 'FlowHubspotMailer#general', 'Ainda dá tempo, BRUNO!', '2024-07-08T15:02:09.000-03:00', '2024-07-08T15:02:11.000-03:00', None, 'Gx9quOUzaWx1fkiCZhqdyOS8f32YqYM7')
+[2024-08-04T23:54:22.916+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-04T23:54:22.917+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-04T23:54:22.923+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=carga_fatoemailmarketing, run_id=manual__2024-08-04T23:53:57.444114+00:00, execution_date=20240804T235357, start_date=20240804T235422, end_date=20240804T235422
+[2024-08-04T23:54:22.962+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-04T23:54:22.973+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-04T23:54:22.975+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

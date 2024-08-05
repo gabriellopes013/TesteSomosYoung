@@ -1,0 +1,71 @@
+[2024-08-04T23:51:58.617+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-04T23:51:58.628+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_dag.carga_fatoemailmarketing manual__2024-08-04T23:51:35.206063+00:00 [queued]>
+[2024-08-04T23:51:58.632+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_dag.carga_fatoemailmarketing manual__2024-08-04T23:51:35.206063+00:00 [queued]>
+[2024-08-04T23:51:58.632+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-08-04T23:51:58.638+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): carga_fatoemailmarketing> on 2024-08-04 23:51:35.206063+00:00
+[2024-08-04T23:51:58.646+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=3242) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-04T23:51:58.647+0000] {standard_task_runner.py:64} INFO - Started process 3244 to run task
+[2024-08-04T23:51:58.647+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'carga_fatoemailmarketing', 'manual__2024-08-04T23:51:35.206063+00:00', '--job-id', '1419', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpt4l4rojl']
+[2024-08-04T23:51:58.648+0000] {standard_task_runner.py:91} INFO - Job 1419: Subtask carga_fatoemailmarketing
+[2024-08-04T23:51:58.703+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_dag.carga_fatoemailmarketing manual__2024-08-04T23:51:35.206063+00:00 [running]> on host 88edf8e2824b
+[2024-08-04T23:51:58.821+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Gabriel Almeida' AIRFLOW_CTX_DAG_ID='etl_dag' AIRFLOW_CTX_TASK_ID='carga_fatoemailmarketing' AIRFLOW_CTX_EXECUTION_DATE='2024-08-04T23:51:35.206063+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-04T23:51:35.206063+00:00'
+[2024-08-04T23:51:58.823+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-04T23:51:58.897+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-08-04T23:51:58.912+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+         (2513, 25, 1, 'gustavo.felicio@somosyoung.com.br', 'FlowHubspotMailer#general', 'Vamos resolver isso juntos!', '2024-07-08T12:59:15.000-03:00', '2024-07-08T12:59:29.000-03:00', None, 'iwsMhYjw26FwggrDwIC1Zbr8A5Hv7lIm')
+[2024-08-04T23:51:58.914+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+         (1158, 1, 1, 'karolinarlima3@gmail.com', 'FlowHubspotMailer#general', 'Já parou para pensar que vamos estudar juntos?', '2024-07-08T13:04:39.000-03:00', '2024-07-08T13:04:43.000-03:00', None, 'NlJn01DacbdsfM2wcBIftHk8TjG8tQgJ')
+[2024-08-04T23:51:58.915+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+         (1153, 1, 1, 'luisoog10@gmail.com', 'FlowHubspotMailer#general', 'Ainda dá tempo, Luis!', '2024-07-08T13:05:50.000-03:00', '2024-07-08T13:05:52.000-03:00', None, 'g1jTFTUoHeQNFAQ9R3GitrrNZ02wdvNH')
+[2024-08-04T23:51:58.916+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+         (1153, 1, 1, 'ivoneteguim@gmail.com', 'FlowHubspotMailer#general', 'Ainda dá tempo, Ivonete!', '2024-07-08T13:06:03.000-03:00', '2024-07-08T13:06:07.000-03:00', None, 'lzPbxnxHiBmbPCMTVW15hgsiBOXUNUCm')
+[2024-08-04T23:51:58.918+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+         (1158, 1, 1, 'cauadias583@gmail.com', 'FlowHubspotMailer#general', 'Já parou para pensar que vamos estudar juntos?', '2024-07-08T13:06:12.000-03:00', '2024-07-08T13:06:15.000-03:00', None, 'NfTSk0nDl3OnPlTnQvfNi5l24yAnp2I0')
+[2024-08-04T23:51:58.919+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+         (1158, 1, 1, 'anaclaudiasiriacosiriaco@gmail.com', 'FlowHubspotMailer#general', 'Já parou para pensar que vamos estudar juntos?', '2024-07-08T13:06:43.000-03:00', '2024-07-08T13:06:46.000-03:00', None, 'C7rYIiWizekc4hNMBxgLMSbm2PSP8WuJ')
+[2024-08-04T23:51:58.920+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+         (1152, 1, 1, 'lorenaoliveira0250@gmail.com', 'FlowHubspotMailer#general', 'Precisa de uma mãozinha na prova?', '2024-07-08T13:07:27.000-03:00', '2024-07-08T13:07:30.000-03:00', None, 'S1KAddxqC1VcQutkxEqQUXtX4h0PKWj9')
+[2024-08-04T23:51:58.921+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+         (1192, 1, 1, 'jana.sa0103@gmail.com', 'FlowHubspotMailer#general', 'Estamos torcendo por você!', '2024-07-08T13:09:02.000-03:00', '2024-07-08T13:09:05.000-03:00', None, 'tqnb9THaQsttRlOKbhbi3iG9bycriiMA')
+[2024-08-04T23:51:58.922+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+         (1192, 1, 1, 'rafaelmagalhaespa@gmail.com', 'FlowHubspotMailer#general', 'Estamos torcendo por você!', '2024-07-08T13:09:06.000-03:00', '2024-07-08T13:09:09.000-03:00', None, 'YjpRPlhfq6ZqOIayhvm6rLW6CBn7WwAD')
+[2024-08-04T23:51:58.922+0000] {logging_mixin.py:188} INFO - 
+            INSERT INTO FatoEmailMarketing (
+                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+         (1162, 1, 1, 'carol2005caroline@gmail.com', 'FlowHubspotMailer#general', 'Emilly, queremos ouvir suas expectativas para seu futuro acadêmico.', '2024-07-08T13:12:58.000-03:00', '2024-07-08T13:13:02.000-03:00', None, 'ur8JSYrm4Pc1k0pTi0u0yeaeekrfhjtt')
+[2024-08-04T23:51:58.923+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-04T23:51:58.923+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-04T23:51:58.929+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=carga_fatoemailmarketing, run_id=manual__2024-08-04T23:51:35.206063+00:00, execution_date=20240804T235135, start_date=20240804T235158, end_date=20240804T235158
+[2024-08-04T23:51:58.960+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-04T23:51:58.981+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-04T23:51:58.984+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

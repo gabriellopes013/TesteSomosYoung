@@ -1,0 +1,356 @@
+[2024-08-05T00:00:21.952+0000] {processor.py:161} INFO - Started process (PID=13097) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:00:21.963+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:00:21.977+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:00:21.976+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:00:26.609+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:00:26.608+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:00:26.620+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:00:26.882+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:00:26.882+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:00:26.930+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:00:26.929+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:00:00+00:00, run_after=2024-08-05 00:10:00+00:00
+[2024-08-05T00:00:27.009+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 5.128 seconds
+[2024-08-05T00:00:57.613+0000] {processor.py:161} INFO - Started process (PID=13169) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:00:57.619+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:00:57.621+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:00:57.620+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:00:58.768+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:00:58.766+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:00:58.781+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:00:58.890+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:00:58.890+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:00:58.911+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:00:58.910+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:00:00+00:00, run_after=2024-08-05 00:10:00+00:00
+[2024-08-05T00:00:58.940+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.343 seconds
+[2024-08-05T00:01:29.421+0000] {processor.py:161} INFO - Started process (PID=13233) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:01:29.422+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:01:29.423+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:01:29.423+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:01:29.763+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:01:29.763+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:01:29.767+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:01:29.832+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:01:29.832+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:01:29.843+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:01:29.843+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:00:00+00:00, run_after=2024-08-05 00:10:00+00:00
+[2024-08-05T00:01:29.852+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.439 seconds
+[2024-08-05T00:02:00.197+0000] {processor.py:161} INFO - Started process (PID=13304) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:02:00.199+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:02:00.201+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:02:00.200+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:02:00.516+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:02:00.516+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:02:00.520+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:02:00.526+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:02:00.526+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:02:00.536+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:02:00.536+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:00:00+00:00, run_after=2024-08-05 00:10:00+00:00
+[2024-08-05T00:02:00.544+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.361 seconds
+[2024-08-05T00:02:30.607+0000] {processor.py:161} INFO - Started process (PID=13365) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:02:30.614+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:02:30.618+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:02:30.617+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:02:31.077+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:02:31.076+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:02:31.084+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:02:31.093+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:02:31.093+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:02:31.107+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:02:31.107+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:00:00+00:00, run_after=2024-08-05 00:10:00+00:00
+[2024-08-05T00:02:31.118+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.524 seconds
+[2024-08-05T00:03:02.033+0000] {processor.py:161} INFO - Started process (PID=13429) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:03:02.035+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:03:02.036+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:03:02.035+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:03:02.363+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:03:02.363+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:03:02.371+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:03:02.381+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:03:02.380+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:03:02.404+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:03:02.404+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:00:00+00:00, run_after=2024-08-05 00:10:00+00:00
+[2024-08-05T00:03:02.419+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.392 seconds
+[2024-08-05T00:03:32.513+0000] {processor.py:161} INFO - Started process (PID=13490) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:03:32.515+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:03:32.516+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:03:32.516+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:03:32.805+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:03:32.805+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:03:32.810+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:03:32.819+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:03:32.818+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:03:32.842+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:03:32.842+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:00:00+00:00, run_after=2024-08-05 00:10:00+00:00
+[2024-08-05T00:03:32.852+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.349 seconds
+[2024-08-05T00:04:02.908+0000] {processor.py:161} INFO - Started process (PID=13551) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:04:02.911+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:04:02.914+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:04:02.913+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:04:03.324+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:04:03.323+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:04:03.331+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:04:03.341+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:04:03.340+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:04:03.356+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:04:03.356+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:00:00+00:00, run_after=2024-08-05 00:10:00+00:00
+[2024-08-05T00:04:03.367+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.470 seconds
+[2024-08-05T00:04:34.335+0000] {processor.py:161} INFO - Started process (PID=13612) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:04:34.337+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:04:34.339+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:04:34.338+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:04:34.621+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:04:34.620+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:04:34.630+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:04:34.648+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:04:34.647+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:04:34.668+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:04:34.667+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:00:00+00:00, run_after=2024-08-05 00:10:00+00:00
+[2024-08-05T00:04:34.678+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.352 seconds
+[2024-08-05T00:05:05.644+0000] {processor.py:161} INFO - Started process (PID=13673) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:05:05.646+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:05:05.647+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:05:05.647+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:05:05.992+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:05:05.992+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:05:05.998+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:05:06.007+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:05:06.007+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:05:06.022+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:05:06.021+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:00:00+00:00, run_after=2024-08-05 00:10:00+00:00
+[2024-08-05T00:05:06.032+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.398 seconds
+[2024-08-05T00:05:36.514+0000] {processor.py:161} INFO - Started process (PID=13734) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:05:36.517+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:05:36.518+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:05:36.517+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:05:36.884+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:05:36.884+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:05:36.890+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:05:36.900+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:05:36.900+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:05:36.933+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:05:36.932+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:00:00+00:00, run_after=2024-08-05 00:10:00+00:00
+[2024-08-05T00:05:36.951+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.459 seconds
+[2024-08-05T00:06:07.880+0000] {processor.py:161} INFO - Started process (PID=13795) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:06:07.884+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:06:07.885+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:06:07.885+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:06:08.234+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:06:08.234+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:06:08.238+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:06:08.245+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:06:08.245+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:06:08.256+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:06:08.256+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:00:00+00:00, run_after=2024-08-05 00:10:00+00:00
+[2024-08-05T00:06:08.265+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.395 seconds
+[2024-08-05T00:06:38.496+0000] {processor.py:161} INFO - Started process (PID=13856) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:06:38.501+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:06:38.504+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:06:38.503+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:06:38.993+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:06:38.992+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:06:39.001+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:06:39.010+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:06:39.009+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:06:40.037+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:06:40.037+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:00:00+00:00, run_after=2024-08-05 00:10:00+00:00
+[2024-08-05T00:06:40.055+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.581 seconds
+[2024-08-05T00:07:10.167+0000] {processor.py:161} INFO - Started process (PID=13931) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:07:10.169+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:07:10.170+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:07:10.169+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:07:10.489+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:07:10.489+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:07:10.495+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:07:10.845+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:07:10.845+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:07:10.855+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:07:10.855+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:00:00+00:00, run_after=2024-08-05 00:10:00+00:00
+[2024-08-05T00:07:10.864+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.703 seconds
+[2024-08-05T00:07:41.606+0000] {processor.py:161} INFO - Started process (PID=13992) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:07:41.608+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:07:41.610+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:07:41.609+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:07:41.992+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:07:41.992+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:07:41.998+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:07:42.028+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:07:42.027+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:07:42.051+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:07:42.051+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:00:00+00:00, run_after=2024-08-05 00:10:00+00:00
+[2024-08-05T00:07:42.073+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.478 seconds
+[2024-08-05T00:08:12.944+0000] {processor.py:161} INFO - Started process (PID=14053) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:08:12.946+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:08:12.947+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:08:12.946+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:08:13.344+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:08:13.343+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:08:13.350+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:08:13.360+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:08:13.359+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:08:13.376+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:08:13.376+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:00:00+00:00, run_after=2024-08-05 00:10:00+00:00
+[2024-08-05T00:08:13.401+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.467 seconds
+[2024-08-05T00:08:44.379+0000] {processor.py:161} INFO - Started process (PID=14114) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:08:44.380+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:08:44.381+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:08:44.381+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:08:44.807+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:08:44.806+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:08:44.812+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:08:44.831+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:08:44.831+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:08:44.851+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:08:44.851+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:00:00+00:00, run_after=2024-08-05 00:10:00+00:00
+[2024-08-05T00:08:44.880+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.514 seconds
+[2024-08-05T00:09:14.957+0000] {processor.py:161} INFO - Started process (PID=14182) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:09:14.958+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:09:14.959+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:09:14.959+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:09:15.839+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:09:15.839+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:09:15.849+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:09:15.862+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:09:15.861+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:09:15.943+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:09:15.942+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:00:00+00:00, run_after=2024-08-05 00:10:00+00:00
+[2024-08-05T00:09:15.971+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.027 seconds
+[2024-08-05T00:09:46.903+0000] {processor.py:161} INFO - Started process (PID=14243) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:09:46.911+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:09:46.916+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:09:46.916+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:09:47.275+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:09:47.275+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:09:47.502+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:09:47.509+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:09:47.509+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:09:47.520+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:09:47.520+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:00:00+00:00, run_after=2024-08-05 00:10:00+00:00
+[2024-08-05T00:09:47.528+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.638 seconds
+[2024-08-05T00:10:18.110+0000] {processor.py:161} INFO - Started process (PID=14314) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:10:18.114+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:10:18.124+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:10:18.117+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:10:19.164+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:10:19.163+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:10:19.174+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:10:21.505+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:10:21.504+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:10:21.556+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:10:21.555+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:10:00+00:00, run_after=2024-08-05 00:20:00+00:00
+[2024-08-05T00:10:21.619+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 3.525 seconds
+[2024-08-05T00:10:51.757+0000] {processor.py:161} INFO - Started process (PID=14381) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:10:51.758+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:10:51.758+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:10:51.758+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:10:52.253+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:10:52.253+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:10:52.257+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:10:52.263+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:10:52.263+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:10:52.283+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:10:52.282+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:10:00+00:00, run_after=2024-08-05 00:20:00+00:00
+[2024-08-05T00:10:52.372+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.620 seconds
+[2024-08-05T00:11:22.590+0000] {processor.py:161} INFO - Started process (PID=14449) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:11:22.592+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:11:22.593+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:11:22.592+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:11:23.509+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:11:23.508+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:11:23.516+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:11:23.562+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:11:23.562+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:11:23.575+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:11:23.575+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:10:00+00:00, run_after=2024-08-05 00:20:00+00:00
+[2024-08-05T00:11:23.596+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.012 seconds
+[2024-08-05T00:11:53.849+0000] {processor.py:161} INFO - Started process (PID=14512) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:11:53.851+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:11:53.852+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:11:53.852+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:11:54.401+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:11:54.401+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:11:54.406+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:11:54.415+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:11:54.415+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:11:54.427+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:11:54.426+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:10:00+00:00, run_after=2024-08-05 00:20:00+00:00
+[2024-08-05T00:11:54.440+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.599 seconds
+[2024-08-05T00:12:25.128+0000] {processor.py:161} INFO - Started process (PID=14574) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:12:25.130+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:12:25.131+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:12:25.131+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:12:25.677+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:12:25.676+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:12:25.682+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:12:25.692+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:12:25.691+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:12:25.703+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:12:25.703+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:10:00+00:00, run_after=2024-08-05 00:20:00+00:00
+[2024-08-05T00:12:25.714+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.595 seconds
+[2024-08-05T00:12:56.105+0000] {processor.py:161} INFO - Started process (PID=14640) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:12:56.106+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:12:56.107+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:12:56.106+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:12:56.801+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:12:56.801+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:12:56.805+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:12:56.813+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:12:56.813+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:12:56.824+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:12:56.824+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:10:00+00:00, run_after=2024-08-05 00:20:00+00:00
+[2024-08-05T00:12:56.832+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.734 seconds
+[2024-08-05T00:13:27.294+0000] {processor.py:161} INFO - Started process (PID=14708) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:13:27.295+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:13:27.296+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:13:27.295+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:13:27.758+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:13:27.758+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:13:27.762+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:13:27.769+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:13:27.769+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:13:27.780+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:13:27.779+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:10:00+00:00, run_after=2024-08-05 00:20:00+00:00
+[2024-08-05T00:13:27.789+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.498 seconds
+[2024-08-05T00:13:58.794+0000] {processor.py:161} INFO - Started process (PID=14769) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:13:58.797+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:13:58.798+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:13:58.798+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:13:59.372+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:13:59.372+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:13:59.376+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:13:59.382+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:13:59.382+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:13:59.393+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:13:59.393+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:10:00+00:00, run_after=2024-08-05 00:20:00+00:00
+[2024-08-05T00:13:59.402+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.621 seconds
+[2024-08-05T00:14:30.101+0000] {processor.py:161} INFO - Started process (PID=14831) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:14:30.103+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:14:30.104+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:14:30.104+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:14:30.598+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:14:30.598+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:14:30.601+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:14:30.612+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:14:30.612+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:14:30.626+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:14:30.626+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:10:00+00:00, run_after=2024-08-05 00:20:00+00:00
+[2024-08-05T00:14:30.635+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.545 seconds
+[2024-08-05T00:15:01.496+0000] {processor.py:161} INFO - Started process (PID=14892) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:15:01.497+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:15:01.499+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:15:01.498+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:15:01.976+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:15:01.975+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:15:01.980+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:15:01.986+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:15:01.985+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:15:01.994+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:15:01.994+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:10:00+00:00, run_after=2024-08-05 00:20:00+00:00
+[2024-08-05T00:15:02.002+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.513 seconds
+[2024-08-05T00:15:32.558+0000] {processor.py:161} INFO - Started process (PID=14953) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:15:32.560+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:15:32.561+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:15:32.560+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:15:33.078+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:15:33.078+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:15:33.081+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:15:33.086+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:15:33.086+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:15:33.095+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:15:33.095+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:10:00+00:00, run_after=2024-08-05 00:20:00+00:00
+[2024-08-05T00:15:33.102+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.556 seconds
+[2024-08-05T00:16:03.155+0000] {processor.py:161} INFO - Started process (PID=15022) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:16:03.158+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:16:03.160+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:16:03.160+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:16:04.057+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:16:04.054+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:16:04.066+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:16:04.217+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:16:04.216+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:16:04.243+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:16:04.242+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:10:00+00:00, run_after=2024-08-05 00:20:00+00:00
+[2024-08-05T00:16:04.266+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.126 seconds
+[2024-08-05T00:16:35.093+0000] {processor.py:161} INFO - Started process (PID=15091) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:16:35.095+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:16:35.096+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:16:35.096+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:16:35.752+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:16:35.751+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:16:35.756+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:16:35.762+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:16:35.762+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:16:35.774+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:16:35.774+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:10:00+00:00, run_after=2024-08-05 00:20:00+00:00
+[2024-08-05T00:16:35.784+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.708 seconds
+[2024-08-05T00:17:06.093+0000] {processor.py:161} INFO - Started process (PID=15152) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:17:06.097+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:17:06.111+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:17:06.103+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:17:07.806+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:17:07.806+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:17:07.809+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:17:07.815+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:17:07.815+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:17:07.832+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:17:07.831+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:10:00+00:00, run_after=2024-08-05 00:20:00+00:00
+[2024-08-05T00:17:07.843+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.763 seconds
+[2024-08-05T00:17:38.503+0000] {processor.py:161} INFO - Started process (PID=15223) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:17:38.505+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:17:38.507+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:17:38.506+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:17:39.179+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:17:39.179+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:17:39.182+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:17:39.227+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:17:39.226+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:17:39.240+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:17:39.240+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:10:00+00:00, run_after=2024-08-05 00:20:00+00:00
+[2024-08-05T00:17:39.263+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.772 seconds
+[2024-08-05T00:18:10.159+0000] {processor.py:161} INFO - Started process (PID=15286) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:18:10.172+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:18:10.177+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:18:10.175+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:18:11.372+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:18:11.371+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:18:11.375+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:18:11.382+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:18:11.381+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:18:11.391+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:18:11.391+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:10:00+00:00, run_after=2024-08-05 00:20:00+00:00
+[2024-08-05T00:18:11.400+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.261 seconds
+[2024-08-05T00:18:41.752+0000] {processor.py:161} INFO - Started process (PID=15348) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:18:41.756+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:18:41.757+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:18:41.757+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:18:42.537+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:18:42.533+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 10, in <module>
+    from etl.dim_load import load_dim_user_type, load_dim_company, load_dim_campaign, fetch_dim_data, load_fatoemailmarketing
+ImportError: cannot import name 'fetch_dim_data' from 'etl.dim_load' (/opt/airflow/dags/etl/dim_load.py)
+[2024-08-05T00:18:42.537+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:18:42.556+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.850 seconds
+[2024-08-05T00:19:13.290+0000] {processor.py:161} INFO - Started process (PID=15411) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:19:13.292+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:19:13.293+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:19:13.293+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:19:14.044+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:19:14.042+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 10, in <module>
+    from etl.dim_load import load_dim_user_type, load_dim_company, load_dim_campaign, fetch_dim_data, load_fatoemailmarketing
+ImportError: cannot import name 'fetch_dim_data' from 'etl.dim_load' (/opt/airflow/dags/etl/dim_load.py)
+[2024-08-05T00:19:14.044+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:19:14.070+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.789 seconds
+[2024-08-05T00:19:21.233+0000] {processor.py:161} INFO - Started process (PID=15436) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:19:21.239+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:19:21.241+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:19:21.240+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:19:21.862+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:19:21.861+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:19:21.867+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:19:21.873+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:19:21.873+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:19:21.884+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:19:21.884+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:10:00+00:00, run_after=2024-08-05 00:20:00+00:00
+[2024-08-05T00:19:21.893+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.682 seconds
+[2024-08-05T00:19:23.519+0000] {processor.py:161} INFO - Started process (PID=15442) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:19:23.522+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:19:23.523+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:19:23.522+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:19:24.137+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:19:24.137+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:19:24.141+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:19:24.149+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:19:24.148+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:19:24.181+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:19:24.181+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:10:00+00:00, run_after=2024-08-05 00:20:00+00:00
+[2024-08-05T00:19:24.228+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.730 seconds
+[2024-08-05T00:19:55.115+0000] {processor.py:161} INFO - Started process (PID=15508) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:19:55.122+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:19:55.131+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:19:55.127+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:19:57.799+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:19:57.796+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:19:57.844+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:19:58.092+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:19:58.087+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:19:58.165+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:19:58.164+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:10:00+00:00, run_after=2024-08-05 00:20:00+00:00
+[2024-08-05T00:19:58.202+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 3.098 seconds
+[2024-08-05T00:20:28.641+0000] {processor.py:161} INFO - Started process (PID=15580) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:20:28.643+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:20:28.644+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:20:28.643+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:20:31.082+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:20:31.081+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:20:31.094+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:20:31.480+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:20:31.476+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:20:31.554+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:20:31.553+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:20:00+00:00, run_after=2024-08-05 00:30:00+00:00
+[2024-08-05T00:20:31.638+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 3.008 seconds
+[2024-08-05T00:21:02.268+0000] {processor.py:161} INFO - Started process (PID=15646) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:21:02.270+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:21:02.272+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:21:02.271+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:21:03.328+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:21:03.327+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:21:03.333+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:21:03.346+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:21:03.346+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:21:03.365+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:21:03.365+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:20:00+00:00, run_after=2024-08-05 00:30:00+00:00
+[2024-08-05T00:21:03.394+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.134 seconds
+[2024-08-05T00:21:33.911+0000] {processor.py:161} INFO - Started process (PID=15707) to work on /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:21:33.914+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2024-08-05T00:21:33.917+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:21:33.916+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:21:35.983+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:21:35.981+0000] {base.py:84} INFO - Using connection ID 'api_connection' for task execution.
+[2024-08-05T00:21:36.025+0000] {processor.py:840} INFO - DAG(s) 'etl_dag' retrieved from /opt/airflow/dags/etl_dag.py
+[2024-08-05T00:21:36.046+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:21:36.046+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:21:36.073+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:21:36.072+0000] {dag.py:3947} INFO - Setting next_dagrun for etl_dag to 2024-08-05 00:20:00+00:00, run_after=2024-08-05 00:30:00+00:00
+[2024-08-05T00:21:36.136+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dag.py took 2.265 seconds

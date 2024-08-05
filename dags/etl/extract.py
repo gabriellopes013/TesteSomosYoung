@@ -11,5 +11,5 @@ def get_data():
     
     return json.dumps({
         "token": token,
-        "idahoy": idahoy
+        "idahoy": idahoy,
     })

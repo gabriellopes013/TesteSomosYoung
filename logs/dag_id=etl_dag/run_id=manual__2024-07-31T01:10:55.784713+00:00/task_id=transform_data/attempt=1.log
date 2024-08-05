@@ -1,0 +1,44 @@
+[2024-07-31T01:11:00.378+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-31T01:11:00.386+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_dag.transform_data manual__2024-07-31T01:10:55.784713+00:00 [queued]>
+[2024-07-31T01:11:00.390+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_dag.transform_data manual__2024-07-31T01:10:55.784713+00:00 [queued]>
+[2024-07-31T01:11:00.390+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-31T01:11:00.395+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_data> on 2024-07-31 01:10:55.784713+00:00
+[2024-07-31T01:11:00.398+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=143) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-31T01:11:00.399+0000] {standard_task_runner.py:64} INFO - Started process 145 to run task
+[2024-07-31T01:11:00.400+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'transform_data', 'manual__2024-07-31T01:10:55.784713+00:00', '--job-id', '60', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpgxpf_9wv']
+[2024-07-31T01:11:00.401+0000] {standard_task_runner.py:91} INFO - Job 60: Subtask transform_data
+[2024-07-31T01:11:00.426+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_dag.transform_data manual__2024-07-31T01:10:55.784713+00:00 [running]> on host bddebbc05abf
+[2024-07-31T01:11:00.478+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Gabriel Almeida' AIRFLOW_CTX_DAG_ID='etl_dag' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2024-07-31T01:10:55.784713+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-31T01:10:55.784713+00:00'
+[2024-07-31T01:11:00.479+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-31T01:11:00.496+0000] {logging_mixin.py:188} INFO - DataFrame:
+[2024-07-31T01:11:00.510+0000] {logging_mixin.py:188} INFO -         id  id_campaign  ...                      opened_at clicked_at
+0  1821658         2607  ...                           None       None
+1  1821659         2602  ...                           None       None
+2  1821660         2607  ...                           None       None
+3  1821661         2607  ...  2024-07-23T14:18:53.000-03:00       None
+4  1821662         2602  ...  2024-07-29T21:52:42.000-03:00       None
+
+[5 rows x 12 columns]
+[2024-07-31T01:11:00.518+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2024-07-31T01:11:00.520+0000] {logging_mixin.py:188} INFO - 1822657
+[2024-07-31T01:11:00.520+0000] {python.py:237} INFO - Done. Returned value was:           id  id_campaign  ...                      opened_at clicked_at
+0    1821658         2607  ...                           None       None
+1    1821659         2602  ...                           None       None
+2    1821660         2607  ...                           None       None
+3    1821661         2607  ...  2024-07-23T14:18:53.000-03:00       None
+4    1821662         2602  ...  2024-07-29T21:52:42.000-03:00       None
+..       ...          ...  ...                            ...        ...
+995  1822653         2517  ...  2024-07-23T18:43:21.000-03:00       None
+996  1822654         2517  ...  2024-07-23T18:43:22.000-03:00       None
+997  1822655         2517  ...                           None       None
+998  1822656         2517  ...                           None       None
+999  1822657         2517  ...                           None       None
+
+[1000 rows x 12 columns]
+[2024-07-31T01:11:00.528+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-31T01:11:00.581+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=transform_data, run_id=manual__2024-07-31T01:10:55.784713+00:00, execution_date=20240731T011055, start_date=20240731T011100, end_date=20240731T011100
+[2024-07-31T01:11:00.626+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-31T01:11:00.642+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-07-31T01:11:00.643+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

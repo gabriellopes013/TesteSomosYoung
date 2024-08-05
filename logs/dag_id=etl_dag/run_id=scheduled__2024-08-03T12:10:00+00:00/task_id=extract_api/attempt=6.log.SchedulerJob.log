@@ -1,0 +1,1 @@
+[2024-08-03T17:24:48.507+0000] {scheduler_job_runner.py:1565} WARNING - Marking task instance <TaskInstance: etl_dag.extract_api scheduled__2024-08-03T12:10:00+00:00 [queued]> stuck in queued as failed. If the task instance has available retries, it will be retried.

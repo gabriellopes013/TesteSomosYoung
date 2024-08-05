@@ -1,0 +1,32 @@
+[2024-08-02T18:48:33.735+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-02T18:48:34.286+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_dag.create_dim_campaign scheduled__2024-08-02T15:50:00+00:00 [queued]>
+[2024-08-02T18:48:34.714+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_dag.create_dim_campaign scheduled__2024-08-02T15:50:00+00:00 [queued]>
+[2024-08-02T18:48:34.730+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-08-02T18:48:34.948+0000] {taskinstance.py:2330} INFO - Executing <Task(PostgresOperator): create_dim_campaign> on 2024-08-02 15:50:00+00:00
+[2024-08-02T18:48:35.044+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=2427) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-02T18:48:35.076+0000] {standard_task_runner.py:64} INFO - Started process 2457 to run task
+[2024-08-02T18:48:35.108+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'create_dim_campaign', 'scheduled__2024-08-02T15:50:00+00:00', '--job-id', '443', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmp90z96tyw']
+[2024-08-02T18:48:35.113+0000] {standard_task_runner.py:91} INFO - Job 443: Subtask create_dim_campaign
+[2024-08-02T18:48:35.645+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_dag.create_dim_campaign scheduled__2024-08-02T15:50:00+00:00 [running]> on host 69633e19c226
+[2024-08-02T18:48:36.871+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Gabriel Almeida' AIRFLOW_CTX_DAG_ID='etl_dag' AIRFLOW_CTX_TASK_ID='create_dim_campaign' AIRFLOW_CTX_EXECUTION_DATE='2024-08-02T15:50:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-02T15:50:00+00:00'
+[2024-08-02T18:48:36.928+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-02T18:48:36.947+0000] {sql.py:282} INFO - Executing: 
+            CREATE TABLE IF NOT EXISTS DimCampaign (
+                id_campaign INT PRIMARY KEY,
+                campaign VARCHAR(255)
+            );
+        
+[2024-08-02T18:48:37.155+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-08-02T18:48:37.234+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-08-02T18:48:37.363+0000] {sql.py:495} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS DimCampaign (
+                id_campaign INT PRIMARY KEY,
+                campaign VARCHAR(255)
+            );
+        , parameters: None
+[2024-08-02T18:48:37.416+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-02T18:48:37.757+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=create_dim_campaign, run_id=scheduled__2024-08-02T15:50:00+00:00, execution_date=20240802T155000, start_date=20240802T184834, end_date=20240802T184837
+[2024-08-02T18:48:38.207+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-02T18:48:38.414+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

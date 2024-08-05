@@ -306,3 +306,17 @@
 [2024-08-05T00:21:55.816+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:21:55.816+0000] {dag.py:3089} INFO - Sync 1 DAGs
 [2024-08-05T00:21:55.830+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:21:55.830+0000] {dag.py:3947} INFO - Setting next_dagrun for testebanco to None, run_after=None
 [2024-08-05T00:21:55.875+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/teste_dag.py took 0.145 seconds
+[2024-08-05T00:22:26.249+0000] {processor.py:161} INFO - Started process (PID=15824) to work on /opt/airflow/dags/teste_dag.py
+[2024-08-05T00:22:26.254+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/teste_dag.py for tasks to queue
+[2024-08-05T00:22:26.260+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:22:26.257+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/teste_dag.py
+[2024-08-05T00:22:26.282+0000] {processor.py:840} INFO - DAG(s) 'testebanco' retrieved from /opt/airflow/dags/teste_dag.py
+[2024-08-05T00:22:26.310+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:22:26.310+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:22:26.322+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:22:26.322+0000] {dag.py:3947} INFO - Setting next_dagrun for testebanco to None, run_after=None
+[2024-08-05T00:22:26.357+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/teste_dag.py took 0.119 seconds
+[2024-08-05T00:22:56.857+0000] {processor.py:161} INFO - Started process (PID=15885) to work on /opt/airflow/dags/teste_dag.py
+[2024-08-05T00:22:56.861+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/teste_dag.py for tasks to queue
+[2024-08-05T00:22:56.862+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:22:56.862+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/teste_dag.py
+[2024-08-05T00:22:56.905+0000] {processor.py:840} INFO - DAG(s) 'testebanco' retrieved from /opt/airflow/dags/teste_dag.py
+[2024-08-05T00:22:56.978+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:22:56.977+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-05T00:22:57.038+0000] {logging_mixin.py:188} INFO - [2024-08-05T00:22:57.037+0000] {dag.py:3947} INFO - Setting next_dagrun for testebanco to None, run_after=None
+[2024-08-05T00:22:57.080+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/teste_dag.py took 0.238 seconds

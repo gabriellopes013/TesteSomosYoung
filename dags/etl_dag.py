@@ -138,5 +138,4 @@ with DAG(
  
 (extract_api >>  transform_data >> testandobanco >>
  [create_dim_campaign, create_dim_company, create_dim_user_type] >> create_fato_email_marketing 
- >> [dim_user_type_load, dim_company_load, dim_campaign_load] >> load_fato >> modify_id
-)
+ >> [dim_user_type_load, dim_company_load, dim_campaign_load] >> load_fato >> modify_id)

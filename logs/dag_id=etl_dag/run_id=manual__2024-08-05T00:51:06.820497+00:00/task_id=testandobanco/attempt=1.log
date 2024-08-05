@@ -1,0 +1,26 @@
+[2024-08-05T00:52:02.903+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-05T00:52:09.797+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_dag.testandobanco manual__2024-08-05T00:51:06.820497+00:00 [queued]>
+[2024-08-05T00:52:10.324+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_dag.testandobanco manual__2024-08-05T00:51:06.820497+00:00 [queued]>
+[2024-08-05T00:52:10.364+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-08-05T00:52:22.747+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): testandobanco> on 2024-08-05 00:51:06.820497+00:00
+[2024-08-05T00:52:23.403+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=72) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-05T00:52:23.531+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'testandobanco', 'manual__2024-08-05T00:51:06.820497+00:00', '--job-id', '1612', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmp8n2ikcrd']
+[2024-08-05T00:52:23.652+0000] {standard_task_runner.py:91} INFO - Job 1612: Subtask testandobanco
+[2024-08-05T00:52:23.646+0000] {standard_task_runner.py:64} INFO - Started process 126 to run task
+[2024-08-05T00:52:31.696+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_dag.testandobanco manual__2024-08-05T00:51:06.820497+00:00 [running]> on host e5e34d4cb805
+[2024-08-05T00:52:59.179+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Gabriel Almeida' AIRFLOW_CTX_DAG_ID='etl_dag' AIRFLOW_CTX_TASK_ID='testandobanco' AIRFLOW_CTX_EXECUTION_DATE='2024-08-05T00:51:06.820497+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-05T00:51:06.820497+00:00'
+[2024-08-05T00:52:59.616+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-05T00:53:02.047+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-08-05T00:53:02.764+0000] {logging_mixin.py:188} INFO - Conexão bem-sucedida!
+[2024-08-05T00:53:05.346+0000] {logging_mixin.py:188} INFO -                                now
+0 2024-08-05 00:53:03.437777+00:00
+[2024-08-05T00:53:05.754+0000] {logging_mixin.py:188} INFO -                                now
+0 2024-08-05 00:53:03.437777+00:00
+[2024-08-05T00:53:05.762+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-05T00:53:05.975+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-05T00:53:06.564+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=testandobanco, run_id=manual__2024-08-05T00:51:06.820497+00:00, execution_date=20240805T005106, start_date=20240805T005209, end_date=20240805T005306
+[2024-08-05T00:53:07.648+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-05T00:53:09.861+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-05T00:53:10.212+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

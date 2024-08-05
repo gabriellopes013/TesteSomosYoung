@@ -3,7 +3,6 @@ from airflow.models import Variable
 import json
 
 def get_data():
-    # Pega a conexão HTTP e lê o token do campo password
     conn = BaseHook.get_connection('api_connection')
     token = conn.password
     

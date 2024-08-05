@@ -1,7 +1,6 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.providers.http.operators.http import SimpleHttpOperator
-from airflow.utils.dates import days_ago
 from airflow.providers.postgres.operators.postgres import PostgresOperator
 from datetime import datetime, timedelta
 from etl.extract import get_data
@@ -90,7 +89,7 @@ with DAG(
         postgres_conn_id='postgres_conn',
         sql="""
             CREATE TABLE IF NOT EXISTS FatoEmailMarketing (
-                id SERIAL PRIMARY KEY,
+                id INT PRIMARY KEY,
                 id_campaign INT,
                 id_company INT,
                 id_user_type INT,
@@ -135,5 +134,4 @@ with DAG(
 (extract_api >>  transform_data >> testandobanco >>
  [create_dim_campaign, create_dim_company, create_dim_user_type] >> create_fato_email_marketing 
  >> [dim_user_type_load, dim_company_load, dim_campaign_load] >> load_fato
-
 )

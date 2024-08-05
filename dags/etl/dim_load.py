@@ -76,8 +76,8 @@ def load_fatoemailmarketing(**kwargs):
 
         cursor.execute(f"""
             INSERT INTO fatoemailmarketing (
-                id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
-            ) VALUES ('{id_campaign}', '{id_company}', '{id_user_type}', '{row['to']}', '{row['mailer']}', '{row['subject']}', '{row['sent_at']}', '{row['opened_at']}', '{row['clicked_at']}', '{row['token']}')
+                id,id_campaign, id_company, id_user_type, "to", mailer, subject, sent_at, opened_at, clicked_at, token
+            ) VALUES ('{row['id']}','{id_campaign}', '{id_company}', '{id_user_type}', '{row['to']}', '{row['mailer']}', '{row['subject']}', '{row['sent_at']}', '{row['opened_at']}', '{row['clicked_at']}', '{row['token']}')
         """.replace("'None'",'Null'))
 
     conn.commit()

@@ -1,0 +1,36 @@
+[2024-08-05T00:57:22.022+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-05T00:57:22.042+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_dag.create_dim_user_type manual__2024-08-05T00:57:11.597398+00:00 [queued]>
+[2024-08-05T00:57:22.057+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_dag.create_dim_user_type manual__2024-08-05T00:57:11.597398+00:00 [queued]>
+[2024-08-05T00:57:22.058+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-08-05T00:57:22.071+0000] {taskinstance.py:2330} INFO - Executing <Task(PostgresOperator): create_dim_user_type> on 2024-08-05 00:57:11.597398+00:00
+[2024-08-05T00:57:22.093+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=96) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-05T00:57:22.115+0000] {standard_task_runner.py:64} INFO - Started process 102 to run task
+[2024-08-05T00:57:22.110+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'create_dim_user_type', 'manual__2024-08-05T00:57:11.597398+00:00', '--job-id', '1622', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmphr6fpwdf']
+[2024-08-05T00:57:22.122+0000] {standard_task_runner.py:91} INFO - Job 1622: Subtask create_dim_user_type
+[2024-08-05T00:57:22.373+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_dag.create_dim_user_type manual__2024-08-05T00:57:11.597398+00:00 [running]> on host 59ce2ba01338
+[2024-08-05T00:57:22.557+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Gabriel Almeida' AIRFLOW_CTX_DAG_ID='etl_dag' AIRFLOW_CTX_TASK_ID='create_dim_user_type' AIRFLOW_CTX_EXECUTION_DATE='2024-08-05T00:57:11.597398+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-05T00:57:11.597398+00:00'
+[2024-08-05T00:57:22.564+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-05T00:57:22.594+0000] {sql.py:282} INFO - Executing: 
+            CREATE TABLE IF NOT EXISTS DimUserType (
+                id_user_type SERIAL PRIMARY KEY,
+                user_type VARCHAR(255) UNIQUE NOT NULL
+);
+        
+[2024-08-05T00:57:22.632+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-08-05T00:57:22.643+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-08-05T00:57:22.665+0000] {sql.py:495} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS DimUserType (
+                id_user_type SERIAL PRIMARY KEY,
+                user_type VARCHAR(255) UNIQUE NOT NULL
+);
+        , parameters: None
+[2024-08-05T00:57:22.682+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-05T00:57:22.697+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=create_dim_user_type, run_id=manual__2024-08-05T00:57:11.597398+00:00, execution_date=20240805T005711, start_date=20240805T005722, end_date=20240805T005722
+[2024-08-05T00:57:22.725+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-05T00:57:22.742+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1297: AirflowProviderDeprecationWarning: Call to deprecated class PostgresOperator. (Please use `***.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.Also, you can provide `hook_params={'schema': <database>}`.)
+  result = cls.__new__(cls)
+
+[2024-08-05T00:57:22.758+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-05T00:57:22.763+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

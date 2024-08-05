@@ -1,0 +1,64 @@
+[2024-08-05T01:08:55.617+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-05T01:08:55.628+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_dag.transform_data manual__2024-08-05T01:08:50.566450+00:00 [queued]>
+[2024-08-05T01:08:55.632+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_dag.transform_data manual__2024-08-05T01:08:50.566450+00:00 [queued]>
+[2024-08-05T01:08:55.633+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-08-05T01:08:55.639+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_data> on 2024-08-05 01:08:50.566450+00:00
+[2024-08-05T01:08:55.648+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=649) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-08-05T01:08:55.650+0000] {standard_task_runner.py:64} INFO - Started process 651 to run task
+[2024-08-05T01:08:55.650+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'transform_data', 'manual__2024-08-05T01:08:50.566450+00:00', '--job-id', '1686', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmp1cduyqj9']
+[2024-08-05T01:08:55.652+0000] {standard_task_runner.py:91} INFO - Job 1686: Subtask transform_data
+[2024-08-05T01:08:55.697+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_dag.transform_data manual__2024-08-05T01:08:50.566450+00:00 [running]> on host 59ce2ba01338
+[2024-08-05T01:08:55.744+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Gabriel Almeida' AIRFLOW_CTX_DAG_ID='etl_dag' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2024-08-05T01:08:50.566450+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-05T01:08:50.566450+00:00'
+[2024-08-05T01:08:55.745+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-05T01:08:55.760+0000] {logging_mixin.py:188} INFO - [{'id': 1811728, 'id_campaign': 1140, 'campaign': '23/2 Unifenas Lead Frio Imediato - EMAIL 1', 'company': 'Unifenas', 'user_type': 'Lead', 'to': 'lilianepatricia18@hotmail.com', 'mailer': 'FlowHubspotMailer#general', 'subject': 'Unifenas [URGENTE!]', 'sent_at': '2024-07-08T03:37:41.000-03:00', 'token': 'velbBxpCgjCSSUd8Ajq3UTAZjnSlxa5f', 'opened_at': None, 'clicked_at': None}, {'id': 1811729, 'id_campaign': 1140, 'campaign': '23/2 Unifenas Lead Frio Imediato - EMAIL 1', 'company': 'Unifenas', 'user_type': 'Lead', 'to': 'carlosantoniodascjunior@gmail.com', 'mailer': 'FlowHubspotMailer#general', 'subject': 'Unifenas [URGENTE!]', 'sent_at': '2024-07-08T03:37:42.000-03:00', 'token': 'DOa0IyYtQtx89CjxjMW6B8E1NA76PAsN', 'opened_at': '2024-07-08T03:37:45.000-03:00', 'clicked_at': None}, {'id': 1811730, 'id_campaign': 1140, 'campaign': '23/2 Unifenas Lead Frio Imediato - EMAIL 1', 'company': 'Unifenas', 'user_type': 'Lead', 'to': 'juliaandrademanu@gmail.com', 'mailer': 'FlowHubspotMailer#general', 'subject': 'Unifenas [URGENTE!]', 'sent_at': '2024-07-08T03:37:43.000-03:00', 'token': 'hn5MCa39WdoT1SVOXVcloTpveMPiEK77', 'opened_at': '2024-07-08T03:37:46.000-03:00', 'clicked_at': None}, {'id': 1811731, 'id_campaign': 1140, 'campaign': '23/2 Unifenas Lead Frio Imediato - EMAIL 1', 'company': 'Unifenas', 'user_type': 'Lead', 'to': 'marcellaolmo@gmail.com', 'mailer': 'FlowHubspotMailer#general', 'subject': 'Unifenas [URGENTE!]', 'sent_at': '2024-07-08T03:37:45.000-03:00', 'token': 'IBUpNRDiFIa9cz8oxiNsOVmlzmCGkDst', 'opened_at': '2024-07-08T03:37:48.000-03:00', 'clicked_at': None}, {'id': 1811732, 'id_campaign': 1140, 'campaign': '23/2 Unifenas Lead Frio Imediato - EMAIL 1', 'company': 'Unifenas', 'user_type': 'Lead', 'to': 'oliveirasuene806@gmail.com', 'mailer': 'FlowHubspotMailer#general', 'subject': 'Unifenas [URGENTE!]', 'sent_at': '2024-07-08T03:37:50.000-03:00', 'token': 'PeIvgXJ9SwDqv4JUHnUOZ0iw4cMfku8l', 'opened_at': '2024-07-08T07:27:09.000-03:00', 'clicked_at': '2024-07-08T12:47:09.000-03:00'}, {'id': 1811733, 'id_campaign': 1140, 'campaign': '23/2 Unifenas Lead Frio Imediato - EMAIL 1', 'company': 'Unifenas', 'user_type': 'Lead', 'to': 'adrianacunha48@yahoo.com', 'mailer': 'FlowHubspotMailer#general', 'subject': 'Unifenas [URGENTE!]', 'sent_at': '2024-07-08T03:37:53.000-03:00', 'token': '58aR8fFLjZkj3gKRsbmaPpQB1ai1VGNA', 'opened_at': '2024-07-08T17:19:08.000-03:00', 'clicked_at': None}, {'id': 1811734, 'id_campaign': 1140, 'campaign': '23/2 Unifenas Lead Frio Imediato - EMAIL 1', 'company': 'Unifenas', 'user_type': 'Lead', 'to': 'estevaonacif@gmail.com', 'mailer': 'FlowHubspotMailer#general', 'subject': 'Unifenas [URGENTE!]', 'sent_at': '2024-07-08T03:37:53.000-03:00', 'token': '4kapjNpQfBKd0cwvKLNcmqCF6BEhMI0p', 'opened_at': '2024-07-08T03:37:57.000-03:00', 'clicked_at': None}, {'id': 1811735, 'id_campaign': 1140, 'campaign': '23/2 Unifenas Lead Frio Imediato - EMAIL 1', 'company': 'Unifenas', 'user_type': 'Lead', 'to': 'luizguilhermegcruz@gmail.com', 'mailer': 'FlowHubspotMailer#general', 'subject': 'Unifenas [URGENTE!]', 'sent_at': '2024-07-08T03:37:55.000-03:00', 'token': 'JSrLvI3hiZjwQuToLI58cdB7REr8V2CZ', 'opened_at': '2024-07-08T03:37:58.000-03:00', 'clicked_at': None}, {'id': 1811736, 'id_campaign': 1140, 'campaign': '23/2 Unifenas Lead Frio Imediato - EMAIL 1', 'company': 'Unifenas', 'user_type': 'Lead', 'to': 'rdamiao360794@gmail.com', 'mailer': 'FlowHubspotMailer#general', 'subject': 'Unifenas [URGENTE!]', 'sent_at': '2024-07-08T03:37:55.000-03:00', 'token': 'IvMwHBjNZMcWayRguUfbslZteA1IRFbZ', 'opened_at': '2024-07-08T03:37:59.000-03:00', 'clicked_at': None}, {'id': 1811737, 'id_campaign': 1140, 'campaign': '23/2 Unifenas Lead Frio Imediato - EMAIL 1', 'company': 'Unifenas', 'user_type': 'Lead', 'to': 'juluzmed24@yahoo.com', 'mailer': 'FlowHubspotMailer#general', 'subject': 'Unifenas [URGENTE!]', 'sent_at': '2024-07-08T03:37:58.000-03:00', 'token': '5ONE9qfzxZUZ5sxRxtLd33Hu0sHdRlsK', 'opened_at': None, 'clicked_at': None}]
+[2024-08-05T01:08:55.762+0000] {logging_mixin.py:188} INFO - DataFrame:
+[2024-08-05T01:08:55.777+0000] {logging_mixin.py:188} INFO -         id  ...                     clicked_at
+0  1811728  ...                           None
+1  1811729  ...                           None
+2  1811730  ...                           None
+3  1811731  ...                           None
+4  1811732  ...  2024-07-08T12:47:09.000-03:00
+5  1811733  ...                           None
+6  1811734  ...                           None
+7  1811735  ...                           None
+8  1811736  ...                           None
+9  1811737  ...                           None
+
+[10 rows x 12 columns]
+[2024-08-05T01:08:55.782+0000] {logging_mixin.py:188} INFO - id             10
+id_campaign    10
+campaign       10
+company        10
+user_type      10
+to             10
+mailer         10
+subject        10
+sent_at        10
+token          10
+opened_at       8
+clicked_at      1
+dtype: int64
+[2024-08-05T01:08:55.805+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2024-08-05T01:08:55.808+0000] {python.py:237} INFO - Done. Returned value was:         id  ...                     clicked_at
+0  1811728  ...                           None
+1  1811729  ...                           None
+2  1811730  ...                           None
+3  1811731  ...                           None
+4  1811732  ...  2024-07-08T12:47:09.000-03:00
+5  1811733  ...                           None
+6  1811734  ...                           None
+7  1811735  ...                           None
+8  1811736  ...                           None
+9  1811737  ...                           None
+
+[10 rows x 12 columns]
+[2024-08-05T01:08:55.816+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-05T01:08:55.881+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=transform_data, run_id=manual__2024-08-05T01:08:50.566450+00:00, execution_date=20240805T010850, start_date=20240805T010855, end_date=20240805T010855
+[2024-08-05T01:08:55.912+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-05T01:08:55.923+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1297: AirflowProviderDeprecationWarning: Call to deprecated class PostgresOperator. (Please use `***.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.Also, you can provide `hook_params={'schema': <database>}`.)
+  result = cls.__new__(cls)
+
+[2024-08-05T01:08:55.934+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-05T01:08:55.935+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
